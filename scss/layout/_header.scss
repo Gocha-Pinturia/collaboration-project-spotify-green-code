@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    &__nav_left li:first-child {
+        width: 262px;
+    }
+    &__nav_left li:nth-of-type(2) {
+        width: 210px;
+    }
+    &__nav_left li:nth-of-type(3) {
+        width: 210px;
+    }
+    &__nav_left li:last-child {
+        width: 362px;
+    }
+    &__nav_right {
+        gap: 23px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        padding: 17px;
+        border-radius: 8px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: variables.$text-color-secondary;
+        transition: .3s all;
+    }
+    &__nav:hover {
+        background-color: variables.$bg-color-hover;
+        color: variables.$text-color-primary;
+    }
+}
