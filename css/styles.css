@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(6, 6, 6);
-  padding: 20px 20px;
+  padding: 15px 15px;
 }
 
 a {
@@ -18,39 +18,55 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.header__nav_left li:first-child {
-  width: 262px;
+.header__item:first-child {
+  width: 100%;
+  max-width: 262px;
 }
-.header__nav_left li:nth-of-type(2) {
-  width: 210px;
+.header__item:nth-of-type(2), .header__item:nth-of-type(3) {
+  width: 100%;
+  max-width: 210px;
 }
-.header__nav_left li:nth-of-type(3) {
-  width: 210px;
+.header__item:last-child {
+  width: 100%;
+  max-width: 362px;
 }
-.header__nav_left li:last-child {
-  width: 362px;
+.header__nav_left {
+  height: 100%;
+  width: 100%;
+  max-width: 1050px;
 }
 .header__nav_right {
-  gap: 23px;
+  width: 100%;
+  max-width: 245px;
 }
 
 .menu {
+  height: 54px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .menu__nav {
-  padding: 17px;
+  padding: 10px 12px;
   border-radius: 8px;
   display: flex;
   gap: 15px;
   align-items: center;
   color: rgb(137, 137, 137);
-  transition: 0.3s all;
+  height: 50px;
+  width: 100%;
+}
+.menu__nav img:last-child {
+  display: none;
 }
 .menu__nav:hover {
   background-color: rgb(17, 17, 17);
   color: rgb(224, 224, 224);
+}
+.menu__nav:hover img:last-child {
+  display: block;
+}
+.menu__nav:hover img:first-child {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

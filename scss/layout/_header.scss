@@ -3,38 +3,57 @@
 .header {
     display: flex;
     justify-content: space-between;
-    &__nav_left li:first-child {
-        width: 262px;
+    &__item:first-child {
+        width: 100%;
+        max-width: 262px;
     }
-    &__nav_left li:nth-of-type(2) {
-        width: 210px;
+    &__item:nth-of-type(2),
+    &__item:nth-of-type(3) {
+        width: 100%;
+        max-width: 210px;
     }
-    &__nav_left li:nth-of-type(3) {
-        width: 210px;
-    }
-    &__nav_left li:last-child {
-        width: 362px;
+    &__item:last-child {
+        width: 100%;
+        max-width: 362px;
+        }
+    &__nav_left {
+        height: 100%;
+        width: 100%;
+        max-width: 1050px;
     }
     &__nav_right {
-        gap: 23px;
+        width: 100%;
+        max-width: 245px;
     }
 }
 
 .menu {
+    height: 54px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     &__nav {
-        padding: 17px;
+        padding: 10px 12px;
         border-radius: 8px;
         display: flex;
         gap: 15px;
         align-items: center;
         color: variables.$text-color-secondary;
-        transition: .3s all;
+        height: 50px;
+        width: 100%;
+        img:last-child {
+            display: none;
+        }
     }
+
     &__nav:hover {
         background-color: variables.$bg-color-hover;
         color: variables.$text-color-primary;
+        img:last-child {
+            display: block;
+        }
+        img:first-child {
+            display: none;
+        }
     }
 }
+
