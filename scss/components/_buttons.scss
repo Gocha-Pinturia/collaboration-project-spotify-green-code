@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+
+button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main-nav-bar__btn{
+    padding: 8px 15px;
+    background: rgba(32, 32, 32, 0.5);
+    border-radius: 8px;
+    color: variables.$text-color-primary;
+
+    &:hover{
+        color: variables.$bg-color-hover;
+        background: variables.$text-color-primary;
+    }
+}
+
+.is-active-btn{
+    color: variables.$bg-color-hover;
+    background: variables.$text-color-primary;
+}
+
+.home-add-btn{
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/variables";
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 1491px;
+    border: 1px solid rgba(32, 32, 32, 1);
+    border-radius: 10px;
+    padding: 12px 25px;
+
+    > header{
+        display: flex;
+        justify-content: space-between;
+        backdrop-filter: blur(100px)
+    }
+}
+
+.main-nav-bar{
+    display: flex;
+    gap: 10px;
+}
