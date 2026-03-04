@@ -1,0 +1,46 @@
+@use "../abstracts/variables";
+
+.aside-bar {
+    width: 100%;
+    max-width: 260px;
+    min-width: 150px;
+    
+    &__list {
+        height: 100vh;
+        padding-top: 15px;
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 8px;
+        .aside-bar__icon--active {
+            img:last-child {
+                display: none;
+            }
+        }        
+        &:hover {
+            background-color: variables.$bg-color-hover;
+            .aside-bar__icon--active {
+                color: variables.$text-color-primary;
+                img:last-child {
+                    display: block;
+                }
+                    img:first-child {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+    
+    &__item {
+        padding: 0 0 10px 15px;
+    }
+    &__link {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        align-items: center;
+        gap: 12px;
+        color: variables.$text-color-secondary;
+    }
+}

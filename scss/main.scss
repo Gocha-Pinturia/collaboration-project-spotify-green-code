@@ -3,6 +3,12 @@
 @use "./base/reset";
 @use "./components/buttons";
 @use "./layout/header";
+@use "./layout/sidebar";
 @use "./layout/container";
 @use "./layout/footer";
 
+
+.admin-layout {
+    display: flex;
+    flex-direction: row-reverse;
+}
