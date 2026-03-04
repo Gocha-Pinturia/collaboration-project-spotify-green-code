@@ -6,6 +6,8 @@
 }
 
 body {
+  overflow: hidden;
+  height: 100%;
   background-color: rgb(6, 6, 6);
   padding: 10px 10px;
 }
@@ -152,8 +154,8 @@ a {
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(150px, 260px) 1fr;
-  grid-template-rows: 5vh 85vh 5vh;
-  gap: 0px 14px;
+  grid-template-rows: 5vh 86vh 7vh;
+  gap: 0px 7px;
   justify-items: left;
   justify-content: start;
   grid-template-areas: "aside-bar header" "aside-bar main" "aside-bar footer";
