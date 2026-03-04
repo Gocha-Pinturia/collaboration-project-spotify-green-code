@@ -21,6 +21,11 @@ a {
   flex-wrap: nowrap;
   gap: 11px;
   overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.Made-For-You::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
