@@ -7,7 +7,7 @@
 
 body {
   background-color: rgb(6, 6, 6);
-  padding: 15px 15px;
+  padding: 10px 10px;
 }
 
 a {
@@ -132,9 +132,47 @@ a {
   background-position: 95% top;
 }
 
-.admin-layout {
+.footer {
+  width: 90vh;
+}
+
+.footer__player {
+  background-color: rgb(51, 56, 66);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.controller-list {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: minmax(150px, 260px) 1fr;
+  grid-template-rows: 5vh 85vh 5vh;
+  gap: 0px 14px;
+  justify-items: left;
+  justify-content: start;
+  grid-template-areas: "aside-bar header" "aside-bar main" "aside-bar footer";
+}
+
+.aside-bar {
+  grid-area: aside-bar;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 /*# sourceMappingURL=styles.css.map */

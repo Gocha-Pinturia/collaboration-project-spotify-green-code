@@ -3,12 +3,28 @@
 @use "./base/reset";
 @use "./components/buttons";
 @use "./layout/header";
-@use "./layout/sidebar";
+@use "./layout/asidebar";
 @use "./layout/container";
 @use "./layout/footer";
 
 
-.admin-layout {
-    display: flex;
-    flex-direction: row-reverse;
+
+.admin-layout {  display: grid;
+  grid-template-columns: minmax(150px, 260px) 1fr;
+  grid-template-rows: 5vh 85vh 5vh;
+  gap: 0px 14px;
+  justify-items: left;
+  justify-content: start;
+  grid-template-areas:
+    "aside-bar header"
+    "aside-bar main"
+    "aside-bar footer";
 }
+
+.aside-bar { grid-area: aside-bar; }
+
+.header { grid-area: header; }
+
+.main { grid-area: main; }
+
+.footer { grid-area: footer; }

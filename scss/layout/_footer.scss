@@ -1,0 +1,23 @@
+.footer {
+    // position: fixed;
+    // bottom: 10px;
+    // left: 20%;
+    
+    // border: 1px solid coral;
+    // width: 800px;
+    width: 90vh;
+}
+
+.footer__player { 
+    background-color: rgb(51, 56, 66);
+    padding: 10px;
+    border-radius: 8px;
+}
+.controller-list {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // align-self: center;
+}
