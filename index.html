@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <div class="admin-layout">
@@ -92,12 +93,12 @@
               />My Library</a
             >
           </li>
-          <li class="aside-bar__item">
+          <li class="aside-bar__item aside-bar__item--arrow-right">
             <a href="#" class="aside-bar__link"
               ><img src="./assets/icons/icon_pins.svg" alt="icon pins" />Pins</a
             >
           </li>
-          <li class="aside-bar__item">
+          <li class="aside-bar__item aside-bar__item--arrow-right">
             <a href="#" class="aside-bar__link"
               ><img
                 src="./assets/icons/icon_playlists.svg"
@@ -165,101 +166,90 @@
     <nav></nav>
     <main></main>
     <footer class="player">
+      <div class="controls">
+        <button>
+          <span class="material-symbols-outlined pause"> pause_circle </span>
+          <span class="material-symbols-outlined play"> play_circle </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> skip_previous </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> skip_next </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> shuffle </span>
+        </button>
+        <button class="repeat">
+          <img src="./assets/footer-image/repeat.svg" alt="repeat" />
+        </button>
+      </div>
 
-        <div class="controls">
-            <button>
-                <span class="material-symbols-outlined pause">
-                    pause_circle
-                </span>
-                <span class="material-symbols-outlined play">
-                    play_circle
-                </span>
-            </button>
-            <button>
-                <span class="material-symbols-outlined">
-                    skip_previous
-                </span>
-            </button>
-            <button>
-                <span class="material-symbols-outlined">
-                    skip_next
-                </span>
-            </button>
-            <button>
-                <span class="material-symbols-outlined">
-                    shuffle
-                </span>
-            </button>
-            <button class="repeat">
-                <img src="./assets/footer-image/repeat.svg" alt="repeat">
-            </button>
+      <div class="progress-area">
+        <p class="time">2:23</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
         </div>
+        <span class="time">4:45</span>
+        <a href="#">
+          <img src="./assets/footer-image/dynamics.svg" alt="dynamics" />
+        </a>
+      </div>
 
-        <div class="progress-area">
-            <p class="time">2:23</p>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <span class="time">4:45</span>
+      <div class="song-info">
+        <img src="./assets/footer-image/song-get.svg" alt="Get lucky" />
+
+        <div class="song-text">
+          <p class="song-title">Get Lucky</p>
+          <p class="song-artist">Daft Punk</p>
+          <p class="song-memories">Random Access Memories</p>
+        </div>
+      </div>
+      <div class="actions">
+        <ul>
+          <li>
             <a href="#">
-                <img src="./assets/footer-image/dynamics.svg" alt="dynamics">
+              <img src="./assets/footer-image/favourite.svg" alt="favorite" />
             </a>
-        </div>
-        
-        <div class="song-info">
-            <img src="./assets/footer-image/song-get.svg" alt="Get lucky">
-
-            <div class="song-text">
-                <p class="song-title">Get Lucky</p>
-                <p class="song-artist">Daft Punk</p>
-                <p class="song-memories">Random Access Memories</p>
-            </div>
-        </div>
-        <div class="actions">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/favourite.svg" alt="favorite">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/add-playlist.svg" alt="add-playlist">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/lyrics.svg" alt="lyrics">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/device.svg" alt="device">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/semicolon.svg" alt="colon">
-                    </a>
-                </li>
-                <li>
-                    <img src="./assets/footer-image/horizontal.svg" alt="horizontal">
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/dj.svg" alt="colon">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/footer-image/default.svg" alt="colon">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        
-
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/footer-image/add-playlist.svg"
+                alt="add-playlist"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/lyrics.svg" alt="lyrics" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/device.svg" alt="device" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/semicolon.svg" alt="colon" />
+            </a>
+          </li>
+          <li>
+            <img src="./assets/footer-image/horizontal.svg" alt="horizontal" />
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/dj.svg" alt="colon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/default.svg" alt="colon" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
