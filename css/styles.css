@@ -30,8 +30,7 @@ button {
   color: rgb(17, 17, 17);
   background: rgb(224, 224, 224);
 }
-
-.is-active-btn {
+.main-nav-bar__btn--active {
   color: rgb(17, 17, 17);
   background: rgb(224, 224, 224);
 }
@@ -39,8 +38,45 @@ button {
 .home-add-btn {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-add-btn:hover {
+  opacity: 0.5;
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 25px;
+}
+.cards > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards > header h2 {
+  color: rgb(224, 224, 224);
+}
+.cards__nav-bar {
+  display: flex;
+  gap: 5px;
+}
+.cards__nav-bar-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards__nav-bar-btn:hover {
+  opacity: 0.5;
+}
+.cards__nav-bar-btn--last {
+  opacity: 0.5;
+}
 .cards__list {
   width: 100%;
   max-width: 1440px;
@@ -232,6 +268,7 @@ button {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -239,12 +276,16 @@ main {
   max-width: 1491px;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
-  padding: 12px 25px;
 }
 main > header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(100px);
+  padding: 15px 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .main-nav-bar {

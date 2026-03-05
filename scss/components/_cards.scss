@@ -1,17 +1,55 @@
 @use "../abstracts/variables";
 
-.cards__list{
-    width: 100%;
-    max-width: 1440px;
+.cards{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 11px;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
 
-    &::-webkit-scrollbar {
-        display: none;
+    > header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            color: variables.$text-color-primary;
+        }
+    }
+
+    &__nav-bar{
+        display: flex;
+        gap: 5px;
+
+        &-btn{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+            &--last{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__list{
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 11px;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
 
