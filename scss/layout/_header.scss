@@ -37,6 +37,7 @@
         color: variables.$text-color-secondary;
         height: 50px;
         width: 100%;
+
         img:last-child {
             display: none;
         }
@@ -45,6 +46,9 @@
     &__nav:hover {
         background-color: variables.$bg-color-hover;
         color: variables.$text-color-primary;
+        .menu__icon {
+            stroke: variables.$text-color-primary;;
+        }
         img:last-child {
             display: block;
         }
@@ -73,4 +77,15 @@
 
 .search__bar:hover {
     background-color: variables.$bg-color-hover;
+    background-image: url('../../assets/icons/icon_searchA.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    &::placeholder {
+        color: variables.$text-color-primary;
+    }
+}
+
+.menu__icon {
+    stroke: variables.$text-color-secondary;
 }
