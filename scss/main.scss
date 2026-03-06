@@ -4,11 +4,19 @@
 @use "./components/buttons";
 @use "./components/cards";
 @use "./layout/header";
-@use "./layout/asidebar";
 @use "./layout/container";
+@use "./layout/asidebar";
 @use "./layout/footer";
+@use "./layout/main";
 
 
+.main {
+  margin-top: 10px;
+  overflow-y: auto;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
 
 .admin-layout {  display: grid;
   grid-template-columns: minmax(150px, 260px) 1fr;
@@ -29,3 +37,5 @@
 .main { grid-area: main; }
 
 .footer { grid-area: footer; }
+
+
