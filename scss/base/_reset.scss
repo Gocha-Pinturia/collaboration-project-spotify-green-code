@@ -8,10 +8,11 @@
 }
 
 body {
-    overflow: hidden;
-    height: 100%;
+    // overflow: hidden;
+    height: 100vh;
     background-color: variables.$bg-color;
     padding: 10px 10px;
+    max-width: 1780px;
 }
 
 a {

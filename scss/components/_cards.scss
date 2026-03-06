@@ -1,21 +1,66 @@
 @use "../abstracts/variables";
 
-.Made-For-You{
-    width: 100%;
-    max-width: 1440px;
+.cards{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 11px;
-    overflow-y: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 25px;
+
+    > header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            color: variables.$text-color-primary;
+        }
+    }
+
+    &__nav-bar{
+        display: flex;
+        gap: 5px;
+
+        &-btn{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                opacity: 0.5;
+            }
+
+            &--last{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__list{
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 11px;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 }
 
 .card {
   width: 170px;
   height: 254px;
+  transition: all 0.2s ease-in-out;
 
   &:hover{
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    opacity: 0.5;
   }
 
   &__image {
