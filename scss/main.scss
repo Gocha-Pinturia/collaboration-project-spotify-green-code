@@ -5,27 +5,12 @@
 @use "./components/cards";
 @use "./layout/header";
 @use "./layout/asidebar";
+@use "./layout/main";
 @use "./layout/container";
 @use "./layout/footer";
 
 
-
-.admin-layout {  display: grid;
-  grid-template-columns: minmax(150px, 260px) 1fr;
-  grid-template-rows: 5vh 86vh 7vh;
-  gap: 0px 7px;
-  justify-items: left;
-  justify-content: start;
-  grid-template-areas:
-    "aside-bar header"
-    "aside-bar main"
-    "aside-bar footer";
+.admin-layout {
+    display: flex;
+    flex-direction: row-reverse;
 }
-
-.aside-bar { grid-area: aside-bar; }
-
-.header { grid-area: header; }
-
-.main { grid-area: main; }
-
-.footer { grid-area: footer; }
