@@ -289,9 +289,11 @@ main {
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  max-width: 1491px;
+  max-width: 1440px;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
+  margin-bottom: 60px;
+  padding-bottom: 16px;
 }
 main > header {
   height: 59px;
@@ -422,7 +424,7 @@ main > header {
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(150px, 260px) 1fr;
-  grid-template-rows: 5vh 86vh 7vh;
+  grid-template-rows: auto 1fr auto;
   gap: 0px 7px;
   justify-items: left;
   justify-content: start;
@@ -441,7 +443,7 @@ main > header {
   grid-area: main;
 }
 
-.footer {
+.player {
   grid-area: footer;
 }
 

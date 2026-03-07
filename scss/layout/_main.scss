@@ -5,9 +5,11 @@ main{
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    max-width: 1491px;
+    max-width: 1440px;
     border: 1px solid rgba(32, 32, 32, 1);
     border-radius: 10px;
+    margin-bottom: 60px;
+    padding-bottom: 16px;
 
     > header{
         height: 59px;
