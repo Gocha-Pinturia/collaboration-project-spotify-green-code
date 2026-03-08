@@ -5,14 +5,24 @@
   list-style-type: none;
 }
 
-body {
+html, body {
+  width: 100%;
   height: 100%;
+}
+
+body {
   background-color: rgb(6, 6, 6);
   padding: 10px 10px;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 button {
@@ -83,6 +93,8 @@ button {
 .cards__list {
   width: 100%;
   max-width: 1440px;
+  flex-grow: 1;
+  min-width: 0;
   display: flex;
   flex-wrap: nowrap;
   gap: 11px;
@@ -158,6 +170,40 @@ button {
 }
 .card--artist .card__content header span, .card--artist .card__content p {
   display: none;
+}
+
+.friends_activity {
+  width: 358px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+}
+.friends_activity__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.friends_activity__header h3 {
+  padding: 10px;
+  color: rgb(224, 224, 224);
+}
+.friends_activity__nav-bar {
+  display: flex;
+  gap: 5px;
+}
+.friends_activity__nav-bar button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.friends_activity__nav-bar button:hover {
+  opacity: 0.5;
 }
 
 .header {
@@ -292,18 +338,23 @@ button {
   background-position: 95% top;
 }
 
-main {
+.main {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.main_section {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 100%;
-  max-width: 1500px;
+  flex-grow: 1;
+  min-width: 0;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
   margin-bottom: 60px;
   padding-bottom: 16px;
 }
-main > header {
+.main_section > header {
   height: 59px;
   position: sticky;
   top: 0;
@@ -315,7 +366,6 @@ main > header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .main-nav-bar {
   display: flex;
   gap: 10px;
@@ -431,7 +481,7 @@ main > header {
 
 .admin-layout {
   display: grid;
-  grid-template-columns: minmax(150px, 260px) 1fr;
+  grid-template-columns: minmax(150px, 260px) 1440px;
   grid-template-rows: auto 1fr auto;
   gap: 0px 7px;
   justify-items: left;

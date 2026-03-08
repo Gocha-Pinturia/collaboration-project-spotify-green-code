@@ -1,31 +1,37 @@
 @use "../abstracts/variables";
 
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.main{
     width: 100%;
-    max-width: 1500px;
-    border: 1px solid rgba(32, 32, 32, 1);
-    border-radius: 10px;
-    margin-bottom: 60px;
-    padding-bottom: 16px;
-
-    > header{
-        height: 59px;
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        backdrop-filter: blur(100px);
-        padding: 0 25px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-}
-
-.main-nav-bar{
     display: flex;
-    gap: 10px;
+    gap: 5px;
+
+    &_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-grow: 1;
+        min-width: 0;
+        border: 1px solid rgba(32, 32, 32, 1);
+        border-radius: 10px;
+        margin-bottom: 60px;
+        padding-bottom: 16px;
+
+        > header{
+            height: 59px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(100px);
+            padding: 0 25px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+
+    &-nav-bar{
+        display: flex;
+        gap: 10px;
+    }
 }

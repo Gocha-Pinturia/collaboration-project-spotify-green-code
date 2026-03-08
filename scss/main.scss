@@ -3,6 +3,7 @@
 @use "./base/reset";
 @use "./components/buttons";
 @use "./components/cards";
+@use "./components/friends_activity";
 @use "./layout/header";
 @use "./layout/asidebar";
 @use "./layout/main";
@@ -10,8 +11,9 @@
 @use "./layout/footer";
 
 
-.admin-layout {  display: grid;
-  grid-template-columns: minmax(150px, 260px) 1fr;
+.admin-layout {
+  display: grid;
+  grid-template-columns: minmax(150px, 260px) 1440px;
   grid-template-rows: auto 1fr auto;
   gap: 0px 7px;
   justify-items: left;

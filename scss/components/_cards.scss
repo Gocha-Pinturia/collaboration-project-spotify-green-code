@@ -41,6 +41,8 @@
     &__list{
         width: 100%;
         max-width: 1440px;
+        flex-grow: 1;
+        min-width: 0;
         display: flex;
         flex-wrap: nowrap;
         gap: 11px;
