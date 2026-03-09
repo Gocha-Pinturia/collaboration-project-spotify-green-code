@@ -25,7 +25,7 @@ img {
   display: block;
 }
 
-button {
+button, label {
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -92,7 +92,6 @@ button {
 }
 .cards__list {
   width: 100%;
-  max-width: 1440px;
   flex-grow: 1;
   min-width: 0;
   display: flex;
@@ -173,10 +172,14 @@ button {
 }
 
 .friends_activity {
-  width: 358px;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
   height: 100%;
   padding: 10px;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   gap: 24px;
   border: 1px solid rgb(32, 32, 32);
@@ -195,15 +198,51 @@ button {
   display: flex;
   gap: 5px;
 }
-.friends_activity__nav-bar button {
+.friends_activity__nav-bar button, .friends_activity__nav-bar label {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.friends_activity__nav-bar button:hover {
+.friends_activity__nav-bar button:hover, .friends_activity__nav-bar label:hover {
   opacity: 0.5;
+}
+.friends_activity__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.friends_activity__item {
+  display: flex;
+}
+.friends_activity__item-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.friends_activity__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.friends_activity__item-info-name {
+  color: rgb(224, 224, 224);
+  font-size: 14px;
+  font-weight: 500;
+}
+.friends_activity__item-info-activity {
+  color: rgb(137, 137, 137);
+  font-size: 12px;
+}
+
+.hidden-trigger {
+  display: none;
+}
+.hidden-trigger:checked ~ .main .friends_activity {
+  width: 358px;
+  opacity: 1;
+  overflow: auto;
 }
 
 .header {
@@ -348,11 +387,11 @@ button {
   flex-direction: column;
   gap: 30px;
   flex-grow: 1;
+  transition: flex 0.4s ease;
   min-width: 0;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
   margin-bottom: 60px;
-  padding-bottom: 16px;
 }
 .main_section > header {
   height: 59px;
@@ -481,7 +520,7 @@ button {
 
 .admin-layout {
   display: grid;
-  grid-template-columns: minmax(150px, 260px) 1440px;
+  grid-template-columns: minmax(150px, 260px) calc(100% - 260px);
   grid-template-rows: auto 1fr auto;
   gap: 0px 7px;
   justify-items: left;

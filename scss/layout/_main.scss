@@ -10,11 +10,11 @@
         flex-direction: column;
         gap: 30px;
         flex-grow: 1;
+        transition: flex 0.4s ease;
         min-width: 0;
         border: 1px solid rgba(32, 32, 32, 1);
         border-radius: 10px;
         margin-bottom: 60px;
-        padding-bottom: 16px;
 
         > header{
             height: 59px;

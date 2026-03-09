@@ -11,6 +11,7 @@
 </head>
 
 <body class="admin-layout">
+  <input type="checkbox" id="friends-sidebar-toggle" class="hidden-trigger">
   <header class="header">
     <ul class="menu header__nav_left">
       <li class="header__item">
@@ -57,8 +58,10 @@
         </a>
       </li>
       <li>
-        <a class="menu__nav" href="#"><img src="./assets/icons/icon_friends.svg" alt="icon friends" /><img
-            src="./assets/icons/icon_friendsActive.svg" alt="icon friends" /></a>
+        <label for="friends-sidebar-toggle" class="menu__nav" href="#">
+          <img src="./assets/icons/icon_friends.svg" alt="icon friends"/>
+          <img src="./assets/icons/icon_friendsActive.svg" alt="icon friends"/>
+        </label>
       </li>
       <!-- icon settings            -->
       <li>
@@ -120,6 +123,8 @@
     </ul>
   </aside>
   <main class="main">
+
+    <!-- main content -->
     <section class="main_section">
       <header>
         <nav>
@@ -1006,13 +1011,26 @@
               </button>
             </li>
             <li>
-              <button>
+              <label for="friends-sidebar-toggle">
                 <img src="./assets/icons/icon_close.svg" alt="Close">
-              </button>
+              </label>
             </li>
           </ul>
         </nav>
       </header>
+      <ul class="friends_activity__list">
+        <li class="friends_activity__item">
+          <img src="assets/friend_images/friend4.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <div class="friends_activity__item-info">
+            <h3 class="friends_activity__item-info-name">FriendlyMusicListener</h3>
+            <div class="friends_activity__item-info-activity">
+              <span class="friends_activity__item-info-activity-when">Just now</span>
+              <p class="friends_activity__item-info-activity-song">Goosebumps</p>
+              <p class="friends_activity__item-info-activity-artist">Travis Scott</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="player">
