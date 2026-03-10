@@ -181,7 +181,7 @@ button, label {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
 }
@@ -212,9 +212,11 @@ button, label {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-left: 21px;
 }
 .friends_activity__item {
   display: flex;
+  gap: 6px;
 }
 .friends_activity__item-avatar {
   width: 40px;
@@ -224,16 +226,33 @@ button, label {
 .friends_activity__item-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  color: rgb(224, 224, 224);
 }
 .friends_activity__item-info-name {
-  color: rgb(224, 224, 224);
-  font-size: 14px;
-  font-weight: 500;
+  padding-left: 6px;
 }
 .friends_activity__item-info-activity {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.friends_activity__item-info-activity--active-icon {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  display: none;
+}
+.friends_activity__item-info-activity--active-time, .friends_activity__item-info-activity-separator, .friends_activity__item-info-activity-artist {
   color: rgb(137, 137, 137);
-  font-size: 12px;
+}
+.friends_activity__item-info-activity--active-time {
+  padding-left: 9px;
+}
+.friends_activity__item-info-activity--active .friends_activity__item-info-activity--active-time {
+  display: none;
+}
+.friends_activity__item-info-activity--active .friends_activity__item-info-activity--active-icon {
+  display: block;
 }
 
 .hidden-trigger {
@@ -381,6 +400,7 @@ button, label {
   width: 100%;
   display: flex;
   gap: 5px;
+  padding-bottom: 60px;
 }
 .main_section {
   display: flex;
@@ -391,7 +411,6 @@ button, label {
   min-width: 0;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 10px;
-  margin-bottom: 60px;
 }
 .main_section > header {
   height: 59px;
