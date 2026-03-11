@@ -1,115 +1,103 @@
+@use "../abstracts/variables";
+
+
 .player {
-  margin: 0 auto;
-  width:100%;
-  background:rgba(51,56,66,1);
-  border-radius:10px;
-  display:flex;
-  align-items:center;
-  justify-content:space-around;
-  position: fixed;
-  bottom: 0;
-  left:auto;
-  .controls{
-  display:flex;
-  gap:5px;
-}
-
-.controls button{
-  background:none;
-  border:none;
-  color:rgba(255,255,255,0.4);
-  font-size:20px;
-  cursor:pointer;
-}
-.repeat{
-    margin-top: 5px;
-    background:none;
-    color:rgba(255,255,255,1);
-}
-.pause{
-  background:#1db954;
-  color:rgba(0,0,0,1);
-  border-radius:50%;
-  font-weight:bold;
-}
-.play{
-    display: none;
-}
-.progress-area{
-  flex:1;
-  display:flex;
-  align-items:center;
-  gap: 8px;
-}
-
-.progress-bar{
-  width:100%;
-  background:rgba(137,137,137,0.27);
-  border-radius:0.5px;
-  position:relative;
-}
-
-.progress{
-  border: 3px solid rgba(137, 137, 137, 0.27) ;
-  width: 45%;
-  background:rgba(224,224,224,1);
-  border-radius:0.5px;
-}
-
-.time{
-  font-weight: 400;
-  font-size:12px;
-  color:rgba(137,137,137,1);
-}
-.progress-area{
-    margin: 15px 8px;
-    justify-content: center;
-    align-items: center;
-}
-.song-info{
-  display:flex;
-  align-items:center;
-  justify-content: space-around;
-  gap: 10px;
-}
-
-.song-info img{
-  width:48px;
-  height:48px;
-  border-radius:6px;
-}
-
-.song-text{
-  font-weight: 400;
-  font-size: 14px;
-  font-style: regular;
-  color: rgba(224,224,224,1);
-  line-height: 100%;
-  letter-spacing: 3%;
-}
-
-.song-title{
-  margin-top:12px;
-}
-
-.song-artist{
-  margin-top: -7px;
-  color:rgba(137,137,137,1);
-}
-.song-memories{
-  color: rgba(137,137,137,1);
-  margin-top: -7px;
-}
-.actions{
+  width: 100%;
+  max-width: 1211px;
   display: flex;
-  align-items: center;
-  margin-right: 15px;
-}
-.actions ul{
-  display: flex;
-  list-style: none;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-}
+  position: fixed;
+  bottom: 0.9%;
+  left: 270px;
+  margin-top: 0.4rem;
+  padding: 0 2.1rem;
+  background-color: #333842;
+  border-radius:1rem;
+
+  .player-left-container {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+
+    .player-controls {
+      width: 65.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .player-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.475rem;
+      }
+
+      .player-progress {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        max-width: 23.6rem;
+
+        .progress-time {
+          color: #898989;;
+          font-size: 1.2rem;
+        }
+
+        .progress-bar {
+          flex: 1;
+          height: 0.4rem;
+          background-color:#898989;
+          border-radius: 0.2rem;
+          position: relative;
+        }
+
+        .progress-bar-fill {
+          width: 48%;
+          height: 100%;
+          background-color:#FFF;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+
+      .player-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+
+        .player-title {
+          color: #FFF;
+        }
+
+        .player-artist,
+        .player-album {
+          color: #898989;
+        }
+      }
+    }
+  }
+
+  .player-right-container {
+    width: 23.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .player-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }

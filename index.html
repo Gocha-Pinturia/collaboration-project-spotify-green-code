@@ -1083,87 +1083,79 @@
     </section>
   </main>
   <footer class="player">
-    <div class="controls">
-      <button>
-        <span class="material-symbols-outlined pause"> pause_circle </span>
-        <span class="material-symbols-outlined play"> play_circle </span>
-      </button>
-      <button>
-        <span class="material-symbols-outlined"> skip_previous </span>
-      </button>
-      <button>
-        <span class="material-symbols-outlined"> skip_next </span>
-      </button>
-      <button>
-        <span class="material-symbols-outlined"> shuffle </span>
-      </button>
-      <button class="repeat">
-        <img src="./assets/footer-image/repeat.svg" alt="repeat" />
-      </button>
-    </div>
-
-    <div class="progress-area">
-      <p class="time">2:23</p>
-      <div class="progress-bar">
-        <div class="progress"></div>
+    <div class="player-left-container">
+      <div class="player-controls">
+        <ul class="player-buttons">
+          <li class="player-btn">
+            <img src="./assets/images-player/player-pause-icon.svg" alt="pause" />
+          </li>
+          <il class="player-btn">
+            <img src="./assets/images-player/player-previous-icon.svg" alt="previous" />
+          </li>
+          <li class="player-btn">
+            <img src="./assets/images-player/player-next-icon.svg" alt="next" />
+          </li>
+          <li class="player-btn">
+            <img src="./assets/images-player/player-shuffle-icon.svg" alt="shuffle" />
+          </li>
+          <li class="player-btn">
+            <img src="./assets/images-player/player-repeat-icon.svg" alt="repeat" />
+          </li>
+        </ul>
+        <div class="player-progress">
+          <span class="progress-time">2:23</span>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <span class="progress-time">4:45</span>
+        </div>
+        <div class="player-volume">
+          <button class="player-btn">
+            <img src="./assets/images-player/player-volume-icon.svg" alt="volume" />
+          </button>
+        </div>
       </div>
-      <span class="time">4:45</span>
-      <a href="#">
-        <img src="./assets/footer-image/dynamics.svg" alt="dynamics" />
-      </a>
-    </div>
-
-    <div class="song-info">
-      <img src="./assets/footer-image/song-get.svg" alt="Get lucky" />
-
-      <div class="song-text">
-        <p class="song-title">Get Lucky</p>
-        <p class="song-artist">Daft Punk</p>
-        <p class="song-memories">Random Access Memories</p>
+      <div class="player-info">
+        <img
+          class="player-cover"
+          src="./assets/images-player/duft-punk-small.png"
+          alt="album cover"
+        />
+        <div class="player-text">
+          <span class="player-title">Get Lucky</span>
+          <span class="player-artist">Daft Punk</span>
+          <span class="player-album">Random Access Memories</span>
+        </div>
       </div>
     </div>
-    <div class="actions">
-      <ul>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/favourite.svg" alt="favorite" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/add-playlist.svg" alt="add-playlist" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/lyrics.svg" alt="lyrics" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/device.svg" alt="device" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/semicolon.svg" alt="colon" />
-          </a>
-        </li>
-        <li>
-          <img src="./assets/footer-image/horizontal.svg" alt="horizontal" />
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/dj.svg" alt="colon" />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./assets/footer-image/default.svg" alt="colon" />
-          </a>
-        </li>
-      </ul>
+    <div class="player-right-container">
+        <button class="player-btn">
+          <img src="./assets/images-player/player-heart-icon.svg" alt="like" />
+        </button>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-add-icon.svg" alt="add" />
+        </button>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-lyrics-icon.svg" alt="lyrics" />
+        </button>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-idk-icon.svg" alt="icon" />
+        </button>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-more-icon.svg" alt="more" />
+        </button>
+        <div class="player-divider">
+          <img src="./assets/images-player/player-divider-icon.svg" alt="divider" />
+        </div>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-dj-icon.svg" alt="dj" />
+        </button>
+        <button class="player-btn">
+          <img src="./assets/images-player/player-queue-icon.svg" alt="queue" />
+        </button>
     </div>
+
+    
   </footer>
 </body>
 
