@@ -31,3 +31,12 @@
 .main { grid-area: main; }
 
 .player { grid-area: footer; }
+
+@media screen and (max-width: 770px) {
+    .admin-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+}

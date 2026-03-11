@@ -134,3 +134,11 @@
     }
   }
 }
+
+@media screen and (max-width: 770px) {
+    .main-nav-bar li:first-child,
+    .cards__nav-bar li:nth-child(1),
+    .cards__nav-bar li:nth-child(2) {
+        display: none;
+    }
+}

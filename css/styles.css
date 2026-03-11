@@ -171,6 +171,13 @@ button, label {
   display: none;
 }
 
+@media screen and (max-width: 770px) {
+  .main-nav-bar li:first-child,
+  .cards__nav-bar li:nth-child(1),
+  .cards__nav-bar li:nth-child(2) {
+    display: none;
+  }
+}
 .friends_activity {
   width: 0;
   opacity: 0;
@@ -264,6 +271,11 @@ button, label {
   overflow: auto;
 }
 
+@media screen and (max-width: 770px) {
+  .friends_activity {
+    display: none;
+  }
+}
 .header {
   display: flex;
   width: 100%;
@@ -349,6 +361,11 @@ button, label {
   stroke: rgb(137, 137, 137);
 }
 
+@media screen and (max-width: 770px) {
+  .header__nav_right {
+    display: none;
+  }
+}
 .aside-bar {
   width: 100%;
   max-width: 260px;
@@ -396,6 +413,11 @@ button, label {
   background-position: 95% top;
 }
 
+@media screen and (max-width: 770px) {
+  .aside-bar {
+    display: none;
+  }
+}
 .main {
   width: 100%;
   display: flex;
@@ -561,6 +583,15 @@ button, label {
 
 .player {
   grid-area: footer;
+}
+
+@media screen and (max-width: 770px) {
+  .admin-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
