@@ -505,15 +505,15 @@ button, label {
 }
 .player {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   background: rgb(51, 56, 66);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: fixed;
+  left: 270px;
   bottom: 0;
-  left: auto;
 }
 .player .controls {
   display: flex;
@@ -587,6 +587,9 @@ button, label {
   line-height: 100%;
   letter-spacing: 3%;
 }
+.player .song-text p {
+  margin-top: 2px;
+}
 .player .song-title {
   margin-top: 12px;
 }
@@ -611,6 +614,24 @@ button, label {
   gap: 16px;
 }
 
+@media screen and (max-width: 770px) {
+  .player {
+    left: 0;
+    width: 100%;
+  }
+  .player .controls {
+    display: none;
+  }
+  .player .progress-area {
+    display: none;
+  }
+  .player .song-info {
+    margin-left: 0px;
+  }
+  .player .song-info img {
+    padding: 5px;
+  }
+}
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(150px, 260px) calc(100% - 260px);
