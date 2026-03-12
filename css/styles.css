@@ -276,6 +276,35 @@ button, label {
     display: none;
   }
 }
+.recommendation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.recommendation__image {
+  width: 43px;
+  height: 43px;
+  border-radius: 3px;
+}
+.recommendation__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.recommendation__info-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(224, 224, 224);
+}
+.recommendation__info-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(137, 137, 137);
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -435,6 +464,7 @@ button, label {
   border-radius: 10px;
 }
 .main_section > header {
+  margin-bottom: -15px;
   height: 59px;
   position: sticky;
   top: 0;
@@ -446,11 +476,33 @@ button, label {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.main_section .recommendations {
+  width: 100%;
+  display: none;
+}
+.main_section .recommendations__list {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 5px));
+  gap: 10px;
+  padding: 0 15px;
+}
+.main_section .recommendations__item {
+  min-height: 58px;
+  padding: 8px;
+  padding-right: 0;
+  border-radius: 10px;
+  background: rgb(32, 32, 32);
+}
 .main-nav-bar {
   display: flex;
   gap: 10px;
 }
 
+@media screen and (max-width: 770px) {
+  .main .main_section .recommendations {
+    display: block;
+  }
+}
 .player {
   margin: 0 auto;
   width: 100%;
