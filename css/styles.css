@@ -391,6 +391,10 @@ button, label {
 }
 
 @media screen and (max-width: 770px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+  }
   .header__nav_right {
     display: none;
   }
@@ -611,6 +615,11 @@ button, label {
   gap: 16px;
 }
 
+@media screen and (max-width: 770px) {
+  .player {
+    bottom: 54px;
+  }
+}
 .admin-layout {
   display: grid;
   grid-template-columns: minmax(150px, 260px) calc(100% - 260px);

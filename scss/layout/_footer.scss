@@ -113,3 +113,9 @@
   gap: 16px;
 }
 }
+
+@media screen and (max-width: 770px) {
+  .player{
+    bottom: 54px;
+  }
+}

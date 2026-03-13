@@ -91,7 +91,12 @@
 }
 
 @media screen and (max-width: 770px) {
-    .header__nav_right{
-        display: none;
+    .header{
+        position: fixed;
+        bottom: 0;
+        
+        &__nav_right{
+            display: none;
+        }
     }
 }
