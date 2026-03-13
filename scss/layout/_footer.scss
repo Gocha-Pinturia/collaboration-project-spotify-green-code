@@ -121,6 +121,7 @@
 }
 @media screen and (max-width: 770px) {
     .player {
+        bottom: 54px;
         left:0;
         width: 100%;
         .controls{
@@ -141,4 +142,11 @@
     }
     
        
+}
+
+@media screen and (max-width: 770px) {
+  .player{
+    bottom: 54px;
+  }
+}
 }

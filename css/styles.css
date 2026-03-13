@@ -392,6 +392,10 @@ button, label {
 }
 
 @media screen and (max-width: 770px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+  }
   .header__nav_right {
     display: none;
   }
