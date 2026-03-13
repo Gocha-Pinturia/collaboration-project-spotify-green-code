@@ -11,6 +11,8 @@
 @use "./layout/container";
 @use "./layout/footer";
 
+@import url('satoshi.css');
+
 
 .admin-layout {
   display: grid;
