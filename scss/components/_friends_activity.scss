@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .friends_activity{
     width: 0;
@@ -22,6 +23,7 @@
         h3{
             padding: 10px;
             color: variables.$text-color-primary;
+            @include mixins.font_14_medium;
         }
     }
 
@@ -62,16 +64,19 @@
         &-info{
             display: flex;
             flex-direction: column;
+            gap: 5px;
             color: variables.$text-color-primary;
 
             &-name{
                 padding-left: 6px;
+                @include mixins.font_14_regular (12px);
             }
 
             &-activity{
                 display: flex;
                 gap: 10px;
                 align-items: center;
+                @include mixins.font_14_regular;
 
                 &--active-icon{
                     width: 30px;

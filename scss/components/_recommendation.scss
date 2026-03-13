@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .recommendation{
     display: flex;
@@ -22,6 +23,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             color: variables.$text-color-primary;
+            @include mixins.font_14_regular;
         }
 
         &-description{
@@ -29,6 +31,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             color: variables.$text-color-secondary;
+            @include mixins.font_14_regular;
         }
     }
 }

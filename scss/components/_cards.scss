@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .cards{
     display: flex;
@@ -13,6 +14,7 @@
 
         h2{
             color: variables.$text-color-primary;
+            @include mixins.font_14_bold (20px);
         }
     }
 
@@ -112,15 +114,18 @@
 
         h3{
             color: variables.$text-color-primary;
+            @include mixins.font_14_medium;
         }
 
         span{
             color: #95E6D3;
+            @include mixins.font_14_regular;
         }
     }
 
     p{
         color: variables.$text-color-secondary;
+        @include mixins.font_14_regular (12px);
     }
   }
 

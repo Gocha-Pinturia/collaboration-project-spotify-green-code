@@ -1,4 +1,6 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
+
 
 .main{
     width: 100%;
@@ -58,7 +60,17 @@
 }
 
 @media screen and (max-width: 770px) {
-    .main .main_section .recommendations{
-        display: block;
+    .main{
+        &-nav-bar__btn{
+            @include mixins.font_14_regular (12px);
+        }
+
+        .main_section{
+            border: none;
+    
+            .recommendations{
+                display: block;
+            }
+        }
     }
 }
