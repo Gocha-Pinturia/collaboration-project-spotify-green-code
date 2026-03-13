@@ -563,7 +563,6 @@ button, label {
   }
 }
 .player {
-  margin: 0 auto;
   width: 80%;
   background: rgb(51, 56, 66);
   border-radius: 10px;
@@ -574,9 +573,18 @@ button, label {
   left: 270px;
   bottom: 0;
 }
+.player .player-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
 .player .controls {
   display: flex;
-  gap: 5px;
+  gap: 15px;
 }
 .player .controls button {
   background: none;
@@ -588,6 +596,7 @@ button, label {
 .player .repeat {
   margin-top: 5px;
   background: none;
+  align-items: center;
   color: rgb(255, 255, 255);
 }
 .player .pause {
@@ -672,10 +681,53 @@ button, label {
   justify-content: space-between;
   gap: 16px;
 }
+.player .mobile-footer-player-none {
+  display: none;
+}
 
+@media screen and (max-width: 1200px) {
+  .player {
+    right: 20px;
+  }
+  .player .controls {
+    display: none;
+  }
+  .player .progress-area {
+    display: none;
+  }
+  .player .song-info p {
+    cursor: pointer;
+  }
+  .player .song-info img {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .actions {
+    display: none !important;
+  }
+  .mobile-footer-player-none {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .mobile-footer-player-none a {
+    width: 20px;
+  }
+  .mobile-footer-player-none a:hover {
+    filter: brightness(80%);
+  }
+  .mobile-footer-player-none .play-arrow {
+    width: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .mobile-footer-player-none .play-arrow:hover {
+    filter: brightness(80%);
+  }
+}
 @media screen and (max-width: 770px) {
   .player {
-    bottom: 54px;
     left: 0;
     width: 100%;
   }
@@ -685,19 +737,35 @@ button, label {
   .player .progress-area {
     display: none;
   }
-  .player .song-info {
-    margin-left: 0px;
+  .player .song-info p {
+    cursor: pointer;
   }
   .player .song-info img {
     padding: 5px;
+    cursor: pointer;
   }
   .actions {
     display: none !important;
   }
-}
-@media screen and (max-width: 770px) {
-  .player {
-    bottom: 54px;
+  .mobile-footer-player-none {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .mobile-footer-player-none a {
+    width: 20px;
+  }
+  .mobile-footer-player-none a:hover {
+    filter: brightness(80%);
+  }
+  .mobile-footer-player-none .play-arrow {
+    width: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .mobile-footer-player-none .play-arrow:hover {
+    filter: brightness(80%);
   }
 }
 .admin-layout {
