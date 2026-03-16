@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("satoshi.css");
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+body, button, input, textarea {
+  font-family: "Satoshi-Variable", sans-serif;
 }
 
 .header {
@@ -112,6 +117,10 @@ img {
 }
 
 @media screen and (max-width: 770px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+  }
   .header__nav_right {
     display: none;
   }
@@ -121,13 +130,15 @@ img {
   max-width: 260px;
   min-width: 150px;
 }
+.aside-bar__header {
+  padding: 15px 0 15px 15px;
+}
 .aside-bar__list {
   height: 100vh;
-  padding-top: 15px;
   margin-top: 2px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 5px;
   border-radius: 8px;
 }
 .aside-bar__list .aside-bar__icon--active img:last-child {
@@ -146,7 +157,12 @@ img {
   display: none;
 }
 .aside-bar__item {
-  padding: 0 0 10px 15px;
+  overflow: hidden;
+  padding: 15px 0 15px 15px;
+}
+.aside-bar__item:hover {
+  background-color: rgb(32, 32, 32);
+  border-radius: 5px;
 }
 .aside-bar__link {
   display: grid;
@@ -160,14 +176,9 @@ img {
   background-image: url("../assets/icons/icon_arrow_right.svg");
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position: 95% top;
+  background-position: 95% center;
 }
 
-@media screen and (max-width: 770px) {
-  .aside-bar {
-    display: none;
-  }
-}
 .friends_activity {
   width: 0;
   opacity: 0;
@@ -190,6 +201,10 @@ img {
 .friends_activity__header h3 {
   padding: 10px;
   color: rgb(224, 224, 224);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
 }
 .friends_activity__nav-bar {
   display: flex;
@@ -223,15 +238,24 @@ img {
 .friends_activity__item-info {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   color: rgb(224, 224, 224);
 }
 .friends_activity__item-info-name {
   padding-left: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 3%;
 }
 .friends_activity__item-info-activity {
   display: flex;
   gap: 10px;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
 }
 .friends_activity__item-info-activity--active-icon {
   width: 30px;
@@ -278,6 +302,10 @@ button, label {
   background: rgba(32, 32, 32, 0.5);
   border-radius: 8px;
   color: rgb(224, 224, 224);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
 }
 .main-nav-bar__btn:hover {
   color: rgb(17, 17, 17);
@@ -351,12 +379,20 @@ button, label {
 }
 
 @media screen and (max-width: 770px) {
+  .main-nav-bar__btn {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 3%;
+  }
+  .main .main_section {
+    border: none;
+  }
   .main .main_section .recommendations {
     display: block;
   }
 }
 .player {
-  margin: 0 auto;
   width: 80%;
   background: rgb(51, 56, 66);
   border-radius: 10px;
@@ -367,9 +403,18 @@ button, label {
   left: 270px;
   bottom: 0;
 }
+.player .player-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
 .player .controls {
   display: flex;
-  gap: 5px;
+  gap: 15px;
 }
 .player .controls button {
   background: none;
@@ -381,6 +426,7 @@ button, label {
 .player .repeat {
   margin-top: 5px;
   background: none;
+  align-items: center;
   color: rgb(255, 255, 255);
 }
 .player .pause {
@@ -465,7 +511,51 @@ button, label {
   justify-content: space-between;
   gap: 16px;
 }
+.player .mobile-footer-player-none {
+  display: none;
+}
 
+@media screen and (max-width: 1200px) {
+  .player {
+    right: 20px;
+  }
+  .player .controls {
+    display: none;
+  }
+  .player .progress-area {
+    display: none;
+  }
+  .player .song-info p {
+    cursor: pointer;
+  }
+  .player .song-info img {
+    padding: 5px;
+    cursor: pointer;
+  }
+  .actions {
+    display: none !important;
+  }
+  .mobile-footer-player-none {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .mobile-footer-player-none a {
+    width: 20px;
+  }
+  .mobile-footer-player-none a:hover {
+    filter: brightness(80%);
+  }
+  .mobile-footer-player-none .play-arrow {
+    width: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .mobile-footer-player-none .play-arrow:hover {
+    filter: brightness(80%);
+  }
+}
 @media screen and (max-width: 770px) {
   .player {
     left: 0;
@@ -477,14 +567,35 @@ button, label {
   .player .progress-area {
     display: none;
   }
-  .player .song-info {
-    margin-left: 0px;
+  .player .song-info p {
+    cursor: pointer;
   }
   .player .song-info img {
     padding: 5px;
+    cursor: pointer;
   }
   .actions {
     display: none !important;
+  }
+  .mobile-footer-player-none {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .mobile-footer-player-none a {
+    width: 20px;
+  }
+  .mobile-footer-player-none a:hover {
+    filter: brightness(80%);
+  }
+  .mobile-footer-player-none .play-arrow {
+    width: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .mobile-footer-player-none .play-arrow:hover {
+    filter: brightness(80%);
   }
 }
 .admin-layout {
@@ -601,6 +712,21 @@ button, label {
   color: rgb(137, 137, 137);
   padding: 8px 13px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .main-nav-bar__btn {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 3%;
+  }
+  .main .main_section {
+    border: none;
+  }
+  .main .main_section .recommendations {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

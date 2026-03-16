@@ -6,6 +6,9 @@
 @use "../../scss/layout/main";
 @use "../../scss/layout/footer";
 @use "../../scss/abstracts/variables";
+@use "../../scss/abstracts/mixins";
+
+@import url('satoshi.css');
 
 .admin-layout {
   display: grid;
@@ -130,4 +133,20 @@
         }
     }
   }
+}
+
+@media screen and (max-width: 770px) {
+    .main{
+        &-nav-bar__btn{
+            @include mixins.font_14_regular (12px);
+        }
+
+        .main_section{
+            border: none;
+    
+            .recommendations{
+                display: block;
+            }
+        }
+    }
 }

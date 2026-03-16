@@ -450,13 +450,15 @@ button, label {
   max-width: 260px;
   min-width: 150px;
 }
+.aside-bar__header {
+  padding: 15px 0 15px 15px;
+}
 .aside-bar__list {
   height: 100vh;
-  padding-top: 15px;
   margin-top: 2px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 5px;
   border-radius: 8px;
 }
 .aside-bar__list .aside-bar__icon--active img:last-child {
@@ -475,7 +477,12 @@ button, label {
   display: none;
 }
 .aside-bar__item {
-  padding: 0 0 10px 15px;
+  overflow: hidden;
+  padding: 15px 0 15px 15px;
+}
+.aside-bar__item:hover {
+  background-color: rgb(32, 32, 32);
+  border-radius: 5px;
 }
 .aside-bar__link {
   display: grid;
@@ -489,14 +496,9 @@ button, label {
   background-image: url("../assets/icons/icon_arrow_right.svg");
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position: 95% top;
+  background-position: 95% center;
 }
 
-@media screen and (max-width: 770px) {
-  .aside-bar {
-    display: none;
-  }
-}
 .main {
   width: 100%;
   display: flex;
