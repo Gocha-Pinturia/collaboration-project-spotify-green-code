@@ -10,7 +10,9 @@
 </head>
 
 <body class="admin-layout">
+
   <input type="checkbox" id="friends-sidebar-toggle" class="hidden-trigger">
+
   <header class="header">
     <ul class="menu header__nav_left">
       <li class="header__item">
@@ -83,6 +85,7 @@
       </li>
     </ul>
   </header>
+
   <aside class="aside-bar">
     <ul class="aside-bar__list">
       <li class="aside-bar__item">
@@ -125,72 +128,130 @@
       </li>
     </ul>
   </aside>
+
   <main class="main">
 
     <!-- main content -->
     <section class="main_section">
-      <header>
-        <nav>
-          <ul class="main-nav-bar">
-            <li>
-              <button class="main-nav-bar__btn main-nav-bar__btn--active">All</button>
-            </li>
-            <li>
-              <button class="main-nav-bar__btn">Music</button>
-            </li>
-            <li>
-              <button class="main-nav-bar__btn">Podcasts</button>
-            </li>
-            <li>
-              <button class="main-nav-bar__btn">Audiobooks</button>
-            </li>
-          </ul>
-        </nav>
-        <button class="home-add-btn">
-          <img src="assets/icons/icon_home-add.png" alt="home-add">
-        </button>
-      </header>
+
+      <nav class="library_nav_bar">
+        <ul class="library_nav_bar__items">
+          <li>
+            <ul class="library_nav_bar__buttons_view">
+              <li>
+                <button class="btn_with_img">
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.58398 13H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1 13H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M6.58398 7H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1 7H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M6.58398 1H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M1 1H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                  <!-- <img src="./assets/icons/icon_list.svg" alt="List View"> -->
+                </button>
+              </li>
+              <li>
+                <button class="btn_with_img btn_with_img--active">
+                  <!-- <img src="./assets/icons/icon_grid.svg" alt="Grid View"> -->
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 21)" stroke="#E0E0E0" stroke-width="2"/>
+                  <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 9.18176)" stroke="#E0E0E0" stroke-width="2"/>
+                  <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 12.8184 21)" stroke="#E0E0E0" stroke-width="2"/>
+                  <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 12.8184 9.18176)" stroke="#E0E0E0" stroke-width="2"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="library_nav_bar__buttons_filter">
+              <li>
+                <button class="btn_with_img_and_text">
+                  <div class="btn_with_img_and_text__icon">
+                    <!-- <img src="./assets/icons/icon_recent.svg" alt="Recent"> -->
+                     <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.65327 14.2864L5.65327 1.01023M5.65327 1.01023L10.2964 5.65335M5.65327 1.01023L1.01015 5.65335" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M18.6534 1.28638L18.6534 14.5625M18.6534 14.5625L14.0103 9.9194M18.6534 14.5625L23.2965 9.9194" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <span>Recent</span>
+                </button>
+              </li>
+              <li>
+                <button class="btn_with_img_and_text">
+                  <div class="btn_with_img_and_text__icon">
+                    <!-- <img src="./assets/icons/icon_group.svg" alt="Group"> -->
+                     <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 1L1 1" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M15.4922 7L5.49219 7" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M12.4922 13H8.49219" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                  </div>
+                  <span>Group</span>
+                </button>
+              </li>
+              <li>
+                <button class="btn_with_img">
+                  <!-- <img src="./assets/icons/icon_search.svg" alt="Search"> -->
+                   <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9158 15.7929C17.4535 14.2244 18.4016 12.0759 18.4016 9.70591C18.4016 4.90343 14.5084 1.01025 9.70591 1.01025C4.90343 1.01025 1.01025 4.90343 1.01025 9.70591C1.01025 14.5084 4.90343 18.4016 9.70591 18.4016C12.1384 18.4016 14.3377 17.4027 15.9158 15.7929ZM15.9158 15.7929L21.0103 21.0103" stroke="#898989" stroke-width="2.02054" stroke-linecap="round"/>
+                    </svg>
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button class="btn_with_img">
+              <!-- <img src="./assets/icons/icon_plus.svg" alt="Plus"> -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.9059 4.76246V11.9061M11.9059 19.0498V11.9061M11.9059 11.9061L4.76221 11.9061M11.9059 11.9061H19.0496" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
 
       <!-- recommendations -->
        <section class="recommendations">
         <ul class="recommendations__list">
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
               <p class="recommendation__info-description">Daft Punk</p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation2.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation2.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Daily Mix 2</h3>
               <p class="recommendation__info-description"></p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation3.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation3.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Daily Mix 1</h3>
               <p class="recommendation__info-description"></p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Instant Crush</h3>
               <p class="recommendation__info-description">Daft Punk</p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Around the world</h3>
               <p class="recommendation__info-description">Daft Punk</p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation6.png" alt="Daft Punk" class="recommendation__image">
+            <img src="../../assets/recommendation_images/recommendation6.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Rock Mix</h3>
               <p class="recommendation__info-description"></p>
@@ -207,17 +268,17 @@
             <ul class="cards__nav-bar">
               <li>
                 <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                  <img src="../../assets/icons/icon_arrow-left.svg" alt="left arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                  <img src="../../assets/icons/icon_arrow-right.svg" alt="right arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                  <img src="../../assets/icons/icon_ellipsis.svg" alt="ellipsis">
                 </button>
               </li>
             </ul>
@@ -229,7 +290,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DiscoverWeekly.png" alt="Discover Weekly">
+                <img src="../../assets/card_images/DiscoverWeekly.png" alt="Discover Weekly">
               </div>
               <div class="card__content">
                 <header>
@@ -251,7 +312,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix1.png" alt="Daily Mix 1">
+                <img src="../../assets/card_images/DailyMix1.png" alt="Daily Mix 1">
               </div>
               <div class="card__content">
                 <header>
@@ -273,7 +334,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix2.png" alt="Daily Mix 2">
+                <img src="../../assets/card_images/DailyMix2.png" alt="Daily Mix 2">
               </div>
               <div class="card__content">
                 <header>
@@ -295,7 +356,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix3.png" alt="Daily Mix 3">
+                <img src="../../assets/card_images/DailyMix3.png" alt="Daily Mix 3">
               </div>
               <div class="card__content">
                 <header>
@@ -317,7 +378,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix4.png" alt="Daily Mix 4">
+                <img src="../../assets/card_images/DailyMix4.png" alt="Daily Mix 4">
               </div>
               <div class="card__content">
                 <header>
@@ -339,7 +400,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix6.png" alt="Daily Mix 6">
+                <img src="../../assets/card_images/DailyMix6.png" alt="Daily Mix 6">
               </div>
               <div class="card__content">
                 <header>
@@ -361,7 +422,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/NirvanaRadio.png" alt="Nirvana Radio">
+                <img src="../../assets/card_images/NirvanaRadio.png" alt="Nirvana Radio">
               </div>
               <div class="card__content">
                 <header>
@@ -383,7 +444,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/FallOutBoyRadio.png" alt="Fall Out Boy Radio">
+                <img src="../../assets/card_images/FallOutBoyRadio.png" alt="Fall Out Boy Radio">
               </div>
               <div class="card__content">
                 <header>
@@ -405,7 +466,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DiscoverWeekly.png" alt="Discover Weekly">
+                <img src="../../assets/card_images/DiscoverWeekly.png" alt="Discover Weekly">
               </div>
               <div class="card__content">
                 <header>
@@ -427,7 +488,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix1.png" alt="Daily Mix 1">
+                <img src="../../assets/card_images/DailyMix1.png" alt="Daily Mix 1">
               </div>
               <div class="card__content">
                 <header>
@@ -449,7 +510,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix2.png" alt="Daily Mix 2">
+                <img src="../../assets/card_images/DailyMix2.png" alt="Daily Mix 2">
               </div>
               <div class="card__content">
                 <header>
@@ -471,7 +532,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix3.png" alt="Daily Mix 3">
+                <img src="../../assets/card_images/DailyMix3.png" alt="Daily Mix 3">
               </div>
               <div class="card__content">
                 <header>
@@ -493,7 +554,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix4.png" alt="Daily Mix 4">
+                <img src="../../assets/card_images/DailyMix4.png" alt="Daily Mix 4">
               </div>
               <div class="card__content">
                 <header>
@@ -515,7 +576,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DailyMix6.png" alt="Daily Mix 6">
+                <img src="../../assets/card_images/DailyMix6.png" alt="Daily Mix 6">
               </div>
               <div class="card__content">
                 <header>
@@ -537,7 +598,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/NirvanaRadio.png" alt="Nirvana Radio">
+                <img src="../../assets/card_images/NirvanaRadio.png" alt="Nirvana Radio">
               </div>
               <div class="card__content">
                 <header>
@@ -559,7 +620,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/FallOutBoyRadio.png" alt="Fall Out Boy Radio">
+                <img src="../../assets/card_images/FallOutBoyRadio.png" alt="Fall Out Boy Radio">
               </div>
               <div class="card__content">
                 <header>
@@ -585,17 +646,17 @@
             <ul class="cards__nav-bar">
               <li>
                 <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                  <img src="../../assets/icons/icon_arrow-left.svg" alt="left arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                  <img src="../../assets/icons/icon_arrow-right.svg" alt="right arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                  <img src="../../assets/icons/icon_ellipsis.svg" alt="ellipsis">
                 </button>
               </li>
             </ul>
@@ -607,7 +668,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/RockMix.png" alt="Rock Mix">
+                <img src="../../assets/card_images/RockMix.png" alt="Rock Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -629,7 +690,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/ChillMix.png" alt="Chill Mix">
+                <img src="../../assets/card_images/ChillMix.png" alt="Chill Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -651,7 +712,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/PopMix.png" alt="Pop Mix">
+                <img src="../../assets/card_images/PopMix.png" alt="Pop Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -673,7 +734,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DaftPunkMix.png" alt="Daft Punk Mix">
+                <img src="../../assets/card_images/DaftPunkMix.png" alt="Daft Punk Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -695,7 +756,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/HappyMix.png" alt="Happy Mix">
+                <img src="../../assets/card_images/HappyMix.png" alt="Happy Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -717,7 +778,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DavidBowieMix.png" alt="David Bowie Mix">
+                <img src="../../assets/card_images/DavidBowieMix.png" alt="David Bowie Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -739,7 +800,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/UpbeatMix.png" alt="Upbeat Mix">
+                <img src="../../assets/card_images/UpbeatMix.png" alt="Upbeat Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -761,7 +822,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/60sMix.png" alt="60s Mix">
+                <img src="../../assets/card_images/60sMix.png" alt="60s Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -783,7 +844,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/RockMix.png" alt="Rock Mix">
+                <img src="../../assets/card_images/RockMix.png" alt="Rock Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -805,7 +866,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/ChillMix.png" alt="Chill Mix">
+                <img src="../../assets/card_images/ChillMix.png" alt="Chill Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -827,7 +888,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/PopMix.png" alt="Pop Mix">
+                <img src="../../assets/card_images/PopMix.png" alt="Pop Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -849,7 +910,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DaftPunkMix.png" alt="Daft Punk Mix">
+                <img src="../../assets/card_images/DaftPunkMix.png" alt="Daft Punk Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -871,7 +932,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/HappyMix.png" alt="Happy Mix">
+                <img src="../../assets/card_images/HappyMix.png" alt="Happy Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -893,7 +954,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DavidBowieMix.png" alt="David Bowie Mix">
+                <img src="../../assets/card_images/DavidBowieMix.png" alt="David Bowie Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -915,7 +976,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/UpbeatMix.png" alt="Upbeat Mix">
+                <img src="../../assets/card_images/UpbeatMix.png" alt="Upbeat Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -937,7 +998,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/60sMix.png" alt="60s Mix">
+                <img src="../../assets/card_images/60sMix.png" alt="60s Mix">
               </div>
               <div class="card__content">
                 <header>
@@ -963,17 +1024,17 @@
             <ul class="cards__nav-bar">
               <li>
                 <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                  <img src="../../assets/icons/icon_arrow-left.svg" alt="left arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn  cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                  <img src="../../assets/icons/icon_arrow-right.svg" alt="right arrow">
                 </button>
               </li>
               <li>
                 <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                  <img src="../../assets/icons/icon_ellipsis.svg" alt="ellipsis">
                 </button>
               </li>
             </ul>
@@ -985,7 +1046,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/GunsNRoses.png" alt="Guns N' Roses">
+                <img src="../../assets/card_images/GunsNRoses.png" alt="Guns N' Roses">
               </div>
               <div class="card__content">
                 <header>
@@ -1007,7 +1068,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DaftPunk.png" alt="Daft Punk">
+                <img src="../../assets/card_images/DaftPunk.png" alt="Daft Punk">
               </div>
               <div class="card__content">
                 <header>
@@ -1029,7 +1090,7 @@
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/card_images/DavidBowie.png" alt="David Bowie">
+                <img src="../../assets/card_images/DavidBowie.png" alt="David Bowie">
               </div>
               <div class="card__content">
                 <header>
@@ -1060,12 +1121,12 @@
           <ul class="friends_activity__nav-bar">
             <li>
               <button>
-                <img src="./assets/icons/icon_friend_add.svg" alt="Add Friend">
+                <img src="../../assets/icons/icon_friend_add.svg" alt="Add Friend">
               </button>
             </li>
             <li>
               <label for="friends-sidebar-toggle">
-                <img src="./assets/icons/icon_close.svg" alt="Close">
+                <img src="../../assets/icons/icon_close.svg" alt="Close">
               </label>
             </li>
           </ul>
@@ -1073,12 +1134,12 @@
       </header>
       <ul class="friends_activity__list">
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend4.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="../../assets/friend_images/friend4.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">FriendlyMusicListener</h4>
             <div class="friends_activity__item-info-activity friends_activity__item-info-activity--active">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="../../assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">Just now</span>
               <p class="friends_activity__item-info-activity-song">Goosebumps</p>
@@ -1088,12 +1149,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend1.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="../../assets/friend_images/friend1.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">AverageMusicEnjoyer</h4>
             <div class="friends_activity__item-info-activity friends_activity__item-info-activity--active">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="../../assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">Just now</span>
               <p class="friends_activity__item-info-activity-song">Get Lucky</p>
@@ -1103,12 +1164,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend2.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="../../assets/friend_images/friend2.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">MusicEnthusiast</h4>
             <div class="friends_activity__item-info-activity">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="../../assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">1h</span>
               <p class="friends_activity__item-info-activity-song">would he</p>
@@ -1118,12 +1179,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend3.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="../../assets/friend_images/friend3.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">IListenToMusic56</h4>
             <div class="friends_activity__item-info-activity">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="../../assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">6h</span>
               <p class="friends_activity__item-info-activity-song">Rockstar</p>
@@ -1151,7 +1212,7 @@
         <span class="material-symbols-outlined"> shuffle </span>
       </button>
       <button class="repeat">
-        <img src="./assets/footer-image/repeat.svg" alt="repeat" />
+        <img src="../../assets/footer-image/repeat.svg" alt="repeat" />
       </button>
     </div>
 
@@ -1162,12 +1223,12 @@
       </div>
       <span class="time">4:45</span>
       <a href="#">
-        <img src="./assets/footer-image/dynamics.svg" alt="dynamics" />
+        <img src="../../assets/footer-image/dynamics.svg" alt="dynamics" />
       </a>
     </div>
 
     <div class="song-info">
-      <img src="./assets/footer-image/song-get.svg" alt="Get lucky" />
+      <img src="../../assets/footer-image/song-get.svg" alt="Get lucky" />
 
       <div class="song-text">
         <p class="song-title">Get Lucky</p>
@@ -1179,40 +1240,40 @@
       <ul>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/favourite.svg" alt="favorite" />
+            <img src="../../assets/footer-image/favourite.svg" alt="favorite" />
           </a>
         </li>
         <li class="mobile-add">
           <a href="#">
-            <img src="./assets/footer-image/add-playlist.svg" alt="add-playlist" />
+            <img src="../../assets/footer-image/add-playlist.svg" alt="add-playlist" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/lyrics.svg" alt="lyrics" />
+            <img src="../../assets/footer-image/lyrics.svg" alt="lyrics" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/device.svg" alt="device" />
+            <img src="../../assets/footer-image/device.svg" alt="device" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/semicolon.svg" alt="colon" />
+            <img src="../../assets/footer-image/semicolon.svg" alt="colon" />
           </a>
         </li>
         <li>
-          <img src="./assets/footer-image/horizontal.svg" alt="horizontal" />
+          <img src="../../assets/footer-image/horizontal.svg" alt="horizontal" />
         </li>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/dj.svg" alt="colon" />
+            <img src="../../assets/footer-image/dj.svg" alt="colon" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="./assets/footer-image/default.svg" alt="colon" />
+            <img src="../../assets/footer-image/default.svg" alt="colon" />
           </a>
         </li>
       </ul>

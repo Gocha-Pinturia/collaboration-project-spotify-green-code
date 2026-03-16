@@ -3,3 +3,30 @@
 
 @import url("../../../css/styles.css");
 
+
+.library_nav_bar{
+    overflow: hidden;
+    padding: 10px 25px;
+    
+    &__items{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        
+            li:last-child{
+                margin-left: auto;
+            }
+    }
+
+    &__buttons_view{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__buttons_filter{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+}

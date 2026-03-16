@@ -56,15 +56,62 @@ button, label {
   background: rgb(224, 224, 224);
 }
 
-.home-add-btn {
+.btn_with_img, .home-add-btn {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
-.home-add-btn:hover {
-  opacity: 0.5;
+.btn_with_img path, .home-add-btn path {
+  transition: stroke 0.2s ease-in-out;
+}
+.btn_with_img--active, .home-add-btn--active {
+  background: rgba(137, 137, 137, 0.1);
+}
+.btn_with_img--active path, .home-add-btn--active path {
+  stroke: rgb(224, 224, 224);
+}
+.btn_with_img:hover, .home-add-btn:hover {
+  color: rgb(224, 224, 224);
+}
+.btn_with_img:hover path, .home-add-btn:hover path {
+  stroke: rgb(224, 224, 224);
+}
+
+.btn_with_img_and_text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(137, 137, 137);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
+.btn_with_img_and_text:hover {
+  color: rgb(224, 224, 224);
+}
+.btn_with_img_and_text:hover path {
+  stroke: rgb(224, 224, 224);
+}
+.btn_with_img_and_text--active {
+  color: rgb(224, 224, 224);
+}
+.btn_with_img_and_text--active path {
+  stroke: rgb(224, 224, 224);
+}
+.btn_with_img_and_text__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.btn_with_img_and_text__icon path {
+  transition: stroke 0.2s ease-in-out;
 }
 
 .cards {
@@ -698,9 +745,6 @@ button, label {
 @media screen and (max-width: 770px) {
   .player {
     bottom: 54px;
-  }
-  .actions {
-    display: none !important;
   }
 }
 .admin-layout {
