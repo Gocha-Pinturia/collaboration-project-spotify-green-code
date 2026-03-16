@@ -139,7 +139,8 @@
           <li>
             <ul class="library_nav_bar__buttons_view">
               <li>
-                <button class="btn_with_img">
+                <!-- List view button -->
+                <button class="btn_with_img_only">
                   <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.58398 13H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
                   <path d="M1 13H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
@@ -148,12 +149,11 @@
                   <path d="M6.58398 1H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
                   <path d="M1 1H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
                   </svg>
-                  <!-- <img src="./assets/icons/icon_list.svg" alt="List View"> -->
                 </button>
               </li>
               <li>
-                <button class="btn_with_img btn_with_img--active">
-                  <!-- <img src="./assets/icons/icon_grid.svg" alt="Grid View"> -->
+                <!-- Grid view button -->
+                <button class="btn_with_img_only btn_with_img_only--active">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 21)" stroke="#E0E0E0" stroke-width="2"/>
                   <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 9.18176)" stroke="#E0E0E0" stroke-width="2"/>
@@ -167,9 +167,9 @@
           <li>
             <ul class="library_nav_bar__buttons_filter">
               <li>
-                <button class="btn_with_img_and_text">
-                  <div class="btn_with_img_and_text__icon">
-                    <!-- <img src="./assets/icons/icon_recent.svg" alt="Recent"> -->
+                <!-- Recent button -->
+                <button class="btn_with_img">
+                  <div class="btn_with_img__icon">
                      <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.65327 14.2864L5.65327 1.01023M5.65327 1.01023L10.2964 5.65335M5.65327 1.01023L1.01015 5.65335" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
                       <path d="M18.6534 1.28638L18.6534 14.5625M18.6534 14.5625L14.0103 9.9194M18.6534 14.5625L23.2965 9.9194" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
@@ -179,9 +179,9 @@
                 </button>
               </li>
               <li>
-                <button class="btn_with_img_and_text">
-                  <div class="btn_with_img_and_text__icon">
-                    <!-- <img src="./assets/icons/icon_group.svg" alt="Group"> -->
+                <!-- Group button -->
+                <button class="btn_with_img">
+                  <div class="btn_with_img__icon">
                      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M19 1L1 1" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
                       <path d="M15.4922 7L5.49219 7" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
@@ -192,8 +192,8 @@
                 </button>
               </li>
               <li>
-                <button class="btn_with_img">
-                  <!-- <img src="./assets/icons/icon_search.svg" alt="Search"> -->
+                <!-- Search button -->
+                <button class="btn_with_img_only">
                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.9158 15.7929C17.4535 14.2244 18.4016 12.0759 18.4016 9.70591C18.4016 4.90343 14.5084 1.01025 9.70591 1.01025C4.90343 1.01025 1.01025 4.90343 1.01025 9.70591C1.01025 14.5084 4.90343 18.4016 9.70591 18.4016C12.1384 18.4016 14.3377 17.4027 15.9158 15.7929ZM15.9158 15.7929L21.0103 21.0103" stroke="#898989" stroke-width="2.02054" stroke-linecap="round"/>
                     </svg>
@@ -202,8 +202,8 @@
             </ul>
           </li>
           <li>
-            <button class="btn_with_img">
-              <!-- <img src="./assets/icons/icon_plus.svg" alt="Plus"> -->
+            <!-- Plus button -->
+            <button class="btn_with_img_only">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.9059 4.76246V11.9061M11.9059 19.0498V11.9061M11.9059 11.9061L4.76221 11.9061M11.9059 11.9061H19.0496" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -212,97 +212,27 @@
         </ul>
       </nav>
 
-      <!-- recommendations -->
-       <section class="recommendations">
-        <ul class="recommendations__list">
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
-              <p class="recommendation__info-description">Daft Punk</p>
-            </div>
-          </li>
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation2.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Daily Mix 2</h3>
-              <p class="recommendation__info-description"></p>
-            </div>
-          </li>
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation3.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Daily Mix 1</h3>
-              <p class="recommendation__info-description"></p>
-            </div>
-          </li>
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Instant Crush</h3>
-              <p class="recommendation__info-description">Daft Punk</p>
-            </div>
-          </li>
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Around the world</h3>
-              <p class="recommendation__info-description">Daft Punk</p>
-            </div>
-          </li>
-          <li class="recommendations__item recommendation">
-            <img src="../../assets/recommendation_images/recommendation6.png" alt="Daft Punk" class="recommendation__image">
-            <div class="recommendation__info">
-              <h3 class="recommendation__info-title">Rock Mix</h3>
-              <p class="recommendation__info-description"></p>
-            </div>
-          </li>
-        </ul>
-       </section>
-
       <!-- cards section -->
-      <section class="cards">
-        <header>
-          <h2>Made For You</h2>
-          <nav>
-            <ul class="cards__nav-bar">
-              <li>
-                <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="../../assets/icons/icon_arrow-left.svg" alt="left arrow">
-                </button>
-              </li>
-              <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="../../assets/icons/icon_arrow-right.svg" alt="right arrow">
-                </button>
-              </li>
-              <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="../../assets/icons/icon_ellipsis.svg" alt="ellipsis">
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <ul class="cards__list">
+      <section class="library_cards">
+        <ul class="library_cards__items">
           <li>
             <div class="card">
               <div class="card__image">
                 <div class="card__image-top-mirror-second"></div>
                 <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DiscoverWeekly.png" alt="Discover Weekly">
+                <img src="./assets/Images_cards/heart_green.png" alt="Liked songs">
               </div>
               <div class="card__content">
                 <header>
                   <h3>
-                    Discover Weekly
+                    Liked Songs
                   </h3>
                   <span>
-                    50
+                    8
                   </span>
                 </header>
                 <p>
-                  Your weekly mixtape of fresh music.
+                  Numb, Crawling, In the End, and more
                 </p>
               </div>
             </div>

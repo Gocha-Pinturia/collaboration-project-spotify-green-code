@@ -30,3 +30,14 @@
         gap: 35px;
     }
 }
+
+.library_cards{
+    padding: 10px 25px;
+
+    &__items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 11px;
+    }
+}
