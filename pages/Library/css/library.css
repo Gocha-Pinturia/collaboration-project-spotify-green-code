@@ -1,0 +1,35 @@
+@import url("../../../css/styles.css");
+.library_nav_bar {
+  overflow: hidden;
+  padding: 10px 25px;
+}
+.library_nav_bar__items {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.library_nav_bar__items li:last-child {
+  margin-left: auto;
+}
+.library_nav_bar__buttons_view {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.library_nav_bar__buttons_filter {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.library_cards {
+  padding: 10px 25px;
+}
+.library_cards__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+/*# sourceMappingURL=library.css.map */

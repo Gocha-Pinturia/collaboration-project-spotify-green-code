@@ -4,16 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spotify-Home</title>
+  <title>Spotify - Home</title>
   <link rel="stylesheet" href="./css/styles.css" />
-  <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
   <link rel="icon" sizes="32x32" type="image/png" href="./assets/icons/favicon32.png" />
 </head>
 
-<body class="admin-layout">
+<body class="document_body">
   <input type="checkbox" id="friends-sidebar-toggle" class="hidden-trigger">
   <header class="header">
     <ul class="menu header__nav_left">
@@ -22,12 +18,14 @@
           <img src="./assets/icons/icon_homeA.svg" alt="icon home" />Home</a>
       </li>
       <li class="header__item">
-        <a class="menu__nav" href="./pages/discover/discover.html"><img src="./assets/icons/icon_discover.svg" alt="icon discover" />
+        <a class="menu__nav" href="./pages/discover/discover.html"><img src="./assets/icons/icon_discover.svg"
+            alt="icon discover" />
           <img src="./assets/icons/icon_discoverA.svg" alt="" />Discover</a>
       </li>
       <!-- icon search           -->
       <li class="header__item search">
-        <input type="text" onclick="window.location.href='pages/search/search.html'" placeholder="Search..." class="search__bar" name="search-bar" />
+        <input type="text" onclick="window.location.href='pages/search/search.html'" placeholder="Search..."
+          class="search__bar" name="search-bar" />
       </li>
     </ul>
     <ul class="menu header__nav_right">
@@ -61,9 +59,9 @@
         </a>
       </li>
       <li>
-        <label for="friends-sidebar-toggle" class="menu__nav" href="#">
-          <img src="./assets/icons/icon_friends.svg" alt="icon friends"/>
-          <img src="./assets/icons/icon_friendsActive.svg" alt="icon friends"/>
+        <label for="friends-sidebar-toggle" class="menu__nav">
+          <img src="./assets/icons/icon_friends.svg" alt="icon friends" />
+          <img src="./assets/icons/icon_friendsActive.svg" alt="icon friends" />
         </label>
       </li>
       <!-- icon settings            -->
@@ -88,7 +86,7 @@
   <aside class="aside-bar">
     <ul class="aside-bar__list">
       <li class="aside-bar__item">
-        <a class="aside-bar__link aside-bar__icon--active" href="#">
+        <a class="aside-bar__link aside-bar__icon--active" href="./pages/Library/">
           <img src="./assets/icons/icon_library.svg" alt="icon library" /><img src="./assets/icons/icon_libraryA.svg"
             alt="icon library" />My Library</a>
       </li>
@@ -130,32 +128,39 @@
     <!-- main content -->
     <section class="main_section">
       <header>
-        <nav>
-          <ul class="main-nav-bar">
+        <nav class="main-nav-bar">
+          <ul class="main-nav-bar__items">
             <li>
-              <button class="main-nav-bar__btn main-nav-bar__btn--active">All</button>
+              <button class="btn main-nav-bar__btn btn--active">All</button>
             </li>
             <li>
-              <button class="main-nav-bar__btn">Music</button>
+              <button class="btn main-nav-bar__btn">Music</button>
             </li>
             <li>
-              <button class="main-nav-bar__btn">Podcasts</button>
+              <button class="btn main-nav-bar__btn">Podcasts</button>
             </li>
             <li>
-              <button class="main-nav-bar__btn">Audiobooks</button>
+              <button class="btn main-nav-bar__btn">Audiobooks</button>
+            </li>
+            <li>
+              <button class="btn_with_img_only">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2H3C1.89543 2 1 2.89543 1 4C1 5.10457 1.89543 6 3 6H10" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                <rect x="13.7692" y="1" width="6.23077" height="6.23077" rx="3.11538" stroke="#898989" stroke-width="2"/>
+                <path d="M11 16.231L18 16.231C19.1046 16.231 20 15.3355 20 14.231C20 13.1264 19.1046 12.231 18 12.231L11 12.231" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                <rect x="7.23077" y="17.231" width="6.23077" height="6.23077" rx="3.11538" transform="rotate(-180 7.23077 17.231)" stroke="#898989" stroke-width="2"/>
+                </svg>
+              </button>
             </li>
           </ul>
         </nav>
-        <button class="home-add-btn">
-          <img src="assets/icons/icon_home-add.png" alt="home-add">
-        </button>
       </header>
 
       <!-- recommendations -->
-       <section class="recommendations">
+      <section class="recommendations">
         <ul class="recommendations__list">
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="./assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
               <p class="recommendation__info-description">Daft Punk</p>
@@ -169,35 +174,35 @@
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation3.png" alt="Daft Punk" class="recommendation__image">
+            <img src="./assets/recommendation_images/recommendation3.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Daily Mix 1</h3>
               <p class="recommendation__info-description"></p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="./assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Instant Crush</h3>
               <p class="recommendation__info-description">Daft Punk</p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
+            <img src="./assets/recommendation_images/recommendation1.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Around the world</h3>
               <p class="recommendation__info-description">Daft Punk</p>
             </div>
           </li>
           <li class="recommendations__item recommendation">
-            <img src="assets/recommendation_images/recommendation6.png" alt="Daft Punk" class="recommendation__image">
+            <img src="./assets/recommendation_images/recommendation6.png" alt="Daft Punk" class="recommendation__image">
             <div class="recommendation__info">
               <h3 class="recommendation__info-title">Rock Mix</h3>
               <p class="recommendation__info-description"></p>
             </div>
           </li>
         </ul>
-       </section>
+      </section>
 
       <!-- cards section -->
       <section class="cards">
@@ -206,18 +211,26 @@
           <nav>
             <ul class="cards__nav-bar">
               <li>
-                <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only btn_with_img_only--disabled">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.3635 10.1029L5.05136 10.1029M5.05136 10.1029L10.9446 15.9961M5.05136 10.1029L10.9446 4.20961" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.05139 10.1027H19.3636M19.3636 10.1027L13.4703 4.20947M19.3636 10.1027L13.4703 15.996" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                <button class="cards__nav-bar-btn btn_with_img_only">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3.36756" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="11.7865" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="20.2053" cy="11.7866" r="1.68378" fill="#898989"/>
+                  </svg>
                 </button>
               </li>
             </ul>
@@ -584,18 +597,26 @@
           <nav>
             <ul class="cards__nav-bar">
               <li>
-                <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only btn_with_img_only--disabled">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.3635 10.1029L5.05136 10.1029M5.05136 10.1029L10.9446 15.9961M5.05136 10.1029L10.9446 4.20961" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.05139 10.1027H19.3636M19.3636 10.1027L13.4703 4.20947M19.3636 10.1027L13.4703 15.996" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                <button class="cards__nav-bar-btn btn_with_img_only">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3.36756" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="11.7865" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="20.2053" cy="11.7866" r="1.68378" fill="#898989"/>
+                  </svg>
                 </button>
               </li>
             </ul>
@@ -962,18 +983,26 @@
           <nav>
             <ul class="cards__nav-bar">
               <li>
-                <button class="cards__nav-bar-btn cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-left.svg" alt="left arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only btn_with_img_only--disabled">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.3635 10.1029L5.05136 10.1029M5.05136 10.1029L10.9446 15.9961M5.05136 10.1029L10.9446 4.20961" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn  cards__nav-bar-btn--disabled">
-                  <img src="./assets/icons/icon_arrow-right.svg" alt="right arrow">
+                <button class="cards__nav-bar-btn btn_with_img_only btn_with_img_only--disabled">
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.05139 10.1027H19.3636M19.3636 10.1027L13.4703 4.20947M19.3636 10.1027L13.4703 15.996" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </button>
               </li>
               <li>
-                <button class="cards__nav-bar-btn">
-                  <img src="./assets/icons/icon_ellipsis.svg" alt="ellipsis">
+                <button class="cards__nav-bar-btn btn_with_img_only">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3.36756" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="11.7865" cy="11.7866" r="1.68378" fill="#898989"/>
+                  <circle cx="20.2053" cy="11.7866" r="1.68378" fill="#898989"/>
+                  </svg>
                 </button>
               </li>
             </ul>
@@ -1059,13 +1088,19 @@
         <nav>
           <ul class="friends_activity__nav-bar">
             <li>
-              <button>
-                <img src="./assets/icons/icon_friend_add.svg" alt="Add Friend">
+              <button class="btn_with_img_only">
+                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.1541 6.73512C15.1541 8.59498 13.6464 10.1027 11.7865 10.1027C9.92666 10.1027 8.41895 8.59498 8.41895 6.73512C8.41895 4.87527 9.92666 3.36755 11.7865 3.36755C13.6464 3.36755 15.1541 4.87527 15.1541 6.73512Z" stroke="#898989" stroke-width="2.02054"/>
+                <path d="M8.41903 13.4703L4.86725 15.8382C3.9304 16.4628 3.36768 17.5142 3.36768 18.6402V20.3177C3.36768 21.1857 4.07127 21.8893 4.93921 21.8893H17.6798" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.1541 14.3124H17.6797M20.2054 14.3124H17.6797M17.6797 14.3124V11.7867M17.6797 14.3124V16.8381" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </button>
             </li>
             <li>
-              <label for="friends-sidebar-toggle">
-                <img src="./assets/icons/icon_close.svg" alt="Close">
+              <label for="friends-sidebar-toggle" class="btn_with_img_only">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.4701 3.36743L8.41878 8.41878M3.36743 13.4701L8.41878 8.41878M8.41878 8.41878L3.36743 3.36743M8.41878 8.41878L13.4701 13.4701" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </label>
             </li>
           </ul>
@@ -1073,12 +1108,12 @@
       </header>
       <ul class="friends_activity__list">
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend4.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="./assets/friend_images/friend4.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">FriendlyMusicListener</h4>
             <div class="friends_activity__item-info-activity friends_activity__item-info-activity--active">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="./assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">Just now</span>
               <p class="friends_activity__item-info-activity-song">Goosebumps</p>
@@ -1088,12 +1123,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend1.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="./assets/friend_images/friend1.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">AverageMusicEnjoyer</h4>
             <div class="friends_activity__item-info-activity friends_activity__item-info-activity--active">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="./assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">Just now</span>
               <p class="friends_activity__item-info-activity-song">Get Lucky</p>
@@ -1103,12 +1138,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend2.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="./assets/friend_images/friend2.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">MusicEnthusiast</h4>
             <div class="friends_activity__item-info-activity">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="./assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">1h</span>
               <p class="friends_activity__item-info-activity-song">would he</p>
@@ -1118,12 +1153,12 @@
           </div>
         </li>
         <li class="friends_activity__item">
-          <img src="assets/friend_images/friend3.png" alt="Friend Avatar" class="friends_activity__item-avatar">
+          <img src="./assets/friend_images/friend3.png" alt="Friend Avatar" class="friends_activity__item-avatar">
           <div class="friends_activity__item-info">
             <h4 class="friends_activity__item-info-name">IListenToMusic56</h4>
             <div class="friends_activity__item-info-activity">
               <div class="friends_activity__item-info-activity--active-icon">
-                <img src="assets/icons/icon_music-pictogram.svg" alt="Just now">
+                <img src="./assets/icons/icon_music-pictogram.svg" alt="Just now">
               </div>
               <span class="friends_activity__item-info-activity--active-time">6h</span>
               <p class="friends_activity__item-info-activity-song">Rockstar</p>
@@ -1136,107 +1171,98 @@
     </section>
   </main>
   <footer class="player">
-      <div class="player-footer">
-        <div class="controls">
-          <button>
-            <span class="material-symbols-outlined pause"> pause_circle </span>
-            <span class="material-symbols-outlined play"> play_circle </span>
-          </button>
-          <button>
-            <span class="material-symbols-outlined"> skip_previous </span>
-          </button>
-          <button>
-            <span class="material-symbols-outlined"> skip_next </span>
-          </button>
-          <button>
-            <span class="material-symbols-outlined"> shuffle </span>
-          </button>
-          <button class="repeat">
-            <img src="./assets/footer-image/repeat.svg" alt="repeat" />
-          </button>
-        </div>
-
-        <div class="progress-area">
-          <p class="time">2:23</p>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-          <span class="time">4:45</span>
-          <a href="#">
-            <img src="./assets/footer-image/dynamics.svg" alt="dynamics" />
-          </a>
-        </div>
-
-        <div class="song-info">
-          <img src="./assets/footer-image/song-get.svg" alt="Get lucky" />
-
-          <div class="song-text">
-            <p class="song-title">Get Lucky</p>
-            <p class="song-artist">Daft Punk</p>
-            <p class="song-memories">Random Access Memories</p>
-          </div>
-        </div>
-        <div class="actions mobile-desctop">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/favourite.svg" alt="favorite" />
-              </a>
-            </li>
-            <li class="mobile-add">
-              <a href="#">
-                <img
-                  src="./assets/footer-image/add-playlist.svg"
-                  alt="add-playlist"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/lyrics.svg" alt="lyrics" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/device.svg" alt="device" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/semicolon.svg" alt="colon" />
-              </a>
-            </li>
-            <li>
-              <img
-                src="./assets/footer-image/horizontal.svg"
-                alt="horizontal"
-              />
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/dj.svg" alt="colon" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/footer-image/default.svg" alt="colon" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="mobile-footer-player-none">
-        <a href="#">
-          <img
-            src="./assets/footer-image/add-playlist.svg"
-            alt="add-playlist"
-          />
-        </a>
-        <button class="play-arrow">
-          <span class="material-symbols-outlined"> play_circle </span>
+    <div class="player-footer">
+      <div class="controls">
+        <button>
+          <span class="material-symbols-outlined pause"> pause_circle </span>
+          <span class="material-symbols-outlined play"> play_circle </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> skip_previous </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> skip_next </span>
+        </button>
+        <button>
+          <span class="material-symbols-outlined"> shuffle </span>
+        </button>
+        <button class="repeat">
+          <img src="./assets/footer-image/repeat.svg" alt="repeat" />
         </button>
       </div>
-    </footer>
+
+      <div class="progress-area">
+        <p class="time">2:23</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span class="time">4:45</span>
+        <a href="#">
+          <img src="./assets/footer-image/dynamics.svg" alt="dynamics" />
+        </a>
+      </div>
+
+      <div class="song-info">
+        <img src="./assets/footer-image/song-get.svg" alt="Get lucky" />
+
+        <div class="song-text">
+          <p class="song-title">Get Lucky</p>
+          <p class="song-artist">Daft Punk</p>
+          <p class="song-memories">Random Access Memories</p>
+        </div>
+      </div>
+      <div class="actions mobile-desctop">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/favourite.svg" alt="favorite" />
+            </a>
+          </li>
+          <li class="mobile-add">
+            <a href="#">
+              <img src="./assets/footer-image/add-playlist.svg" alt="add-playlist" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/lyrics.svg" alt="lyrics" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/device.svg" alt="device" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/semicolon.svg" alt="colon" />
+            </a>
+          </li>
+          <li>
+            <img src="./assets/footer-image/horizontal.svg" alt="horizontal" />
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/dj.svg" alt="colon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/footer-image/default.svg" alt="colon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mobile-footer-player-none">
+      <a href="#">
+        <img src="./assets/footer-image/add-playlist.svg" alt="add-playlist" />
+      </a>
+      <button class="play-arrow">
+        <span class="material-symbols-outlined"> play_circle </span>
+      </button>
+    </div>
+  </footer>
 </body>
 
 </html>
