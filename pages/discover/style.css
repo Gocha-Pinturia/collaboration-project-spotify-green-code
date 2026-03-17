@@ -669,7 +669,9 @@ button, label {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(35, 46, 46);
   gap: 80px;
+  height: 75vh;
 }
 .main__content__img {
   max-width: 390px;

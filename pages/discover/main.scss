@@ -86,7 +86,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(35, 46, 46);
   gap: 80px;
+  height: 75vh;
   &__img {
     max-width: 390px;
     max-height: 612px;

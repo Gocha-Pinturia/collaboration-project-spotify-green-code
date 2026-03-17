@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify-Search</title>
+    <title>Spotify-Discover</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="icon" sizes="32x32" type="image/png" href="../../assets/icons/favicon32.png" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="../../assets/icons/favicon32.png"
+    />
   </head>
 
   <body class="admin-layout">
@@ -237,7 +242,201 @@
     <main class="main">
       <!-- main content -->
 
+      <section class="main_section">
+        <header class="header-search">
+          <h2 class="header__title">Recent searches</h2>
+          <a href="#">
+            <svg
+              class="icon_hover"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.36756" cy="11.7866" r="1.68378"  />
+              <circle cx="11.7865" cy="11.7866" r="1.68378"  />
+              <circle cx="20.2053" cy="11.7866" r="1.68378"  />
+            </svg>
+          </a>
+        </header>
+        <!-- search-arist-title -->
+        <section class="search-artist">
+          <div class="search-artist__box">
+            <img
+              class="search-artist__icon"
+              src="../../assets/search_images/icons big.svg"
+              alt="icon cancel"
+            />
+            <a href="#"
+              ><img
+                class="search-artist__img"
+                src="../../assets/search_images/image 3.png"
+                alt="image"
+              />
+              <p class="search-artist__title">Daft Punk</p>
+            </a>
+          </div>
 
+          <div class="search-artist__box">
+            <img
+              class="search-artist__icon"
+              src="../../assets/search_images/icons big.svg"
+              alt="icon cancel"
+            />
+            <a href="#"
+              ><img
+                class="search-artist__img"
+                src="../../assets/search_images/image 4.png"
+                alt="image"
+              />
+              <p class="search-artist__title">David Bowie</p>
+            </a>
+          </div>
+
+          <div class="search-artist__box">
+            <img
+              class="search-artist__icon"
+              src="../../assets/search_images/icons big.svg"
+              alt="icon cancel"
+            />
+            <a class="search-artist--last-item" href="#"
+              ><img
+                src="../../assets/search_images/Rectangle 8.png"
+                alt="Rectangle"
+              />
+              <img
+                class="search-artist__img search-artist--last-img"
+                src="../../assets/search_images/image-people.png"
+                alt="image"
+              />
+              <div id="search-artist__title-box">
+                <p class="search-artist__title">Black Holes...</p>
+                <p class="search-artist__title search-arist-title-imp">Muse</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="header-title">
+          <a href="#"><h2 class="header-title__title">Browse all</h2></a>
+          <nav class="header-nav">
+            <h2 class="header-title__sub-title">Discover</h2>
+            <div class="header-nav_box">
+              <a class="arrow-left" href="#">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.3633 10.1029L5.05112 10.1029M5.05112 10.1029L10.9444 15.9961M5.05112 10.1029L10.9444 4.20961"
+                    stroke-width="2.02054"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="arrow-right" href="#">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.05127 10.1027H19.3634M19.3634 10.1027L13.4702 4.20947M19.3634 10.1027L13.4702 15.996"
+                    stroke-width="2.02054"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+          <div class="container-search-artist">
+            <ul class="container-search-artist__list">
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 95.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 97.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 98.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 99.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 100.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 101.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 102.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 96.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 95.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 97.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 98.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 99.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 100.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 101.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 102.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/Frame 96.svg" alt="image"></a></li>
+            </ul>
+          </div>
+                    <nav class="header-nav">
+            <h2 class="header-title__sub-title">Genres</h2>
+            <div class="header-nav_box">
+              <a class="arrow-left" href="#">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.3633 10.1029L5.05112 10.1029M5.05112 10.1029L10.9444 15.9961M5.05112 10.1029L10.9444 4.20961"
+                    stroke-width="2.02054"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="arrow-right" href="#">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.05127 10.1027H19.3634M19.3634 10.1027L13.4702 4.20947M19.3634 10.1027L13.4702 15.996"
+                    stroke-width="2.02054"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
+
+          <div class="container-search-artist">
+            <ul class="container-search-artist__list">
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 95.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 97.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 98.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 99.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 100.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 101.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 102.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 96.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 95.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 97.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 98.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 99.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 100.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 101.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 102.svg" alt="image"></a></li>
+              <li class="list-item"><a href="#"><img src="../../assets/search_images/search_images_buttom/Frame 96.svg" alt="image"></a></li>
+            </ul>
+          </div>
+
+        </section>
+      </section>
 
       <!-- Friends Activity -->
       <section class="friends_activity">
