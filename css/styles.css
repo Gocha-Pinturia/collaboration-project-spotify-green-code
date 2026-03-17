@@ -175,7 +175,7 @@ label {
 }
 .card:hover {
   cursor: pointer;
-  opacity: 0.5;
+  transform: scale(0.96);
 }
 .card__image {
   display: flex;
@@ -219,6 +219,11 @@ label {
   margin-bottom: 8px;
 }
 .card__content header h3 {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   color: rgb(224, 224, 224);
   font-weight: 500;
   font-size: 14px;

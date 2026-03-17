@@ -64,7 +64,8 @@
 
     &:hover {
         cursor: pointer;
-        opacity: 0.5;
+        // opacity: 0.5;
+        transform: scale(0.96);
     }
 
     &__image {
@@ -113,6 +114,12 @@
             margin-bottom: 8px;
 
             h3 {
+                display: -webkit-box;
+                line-clamp: 1;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                // text-overflow: ellipsis;
                 color: variables.$text-color-primary;
                 @include mixins.font_14_medium;
             }
