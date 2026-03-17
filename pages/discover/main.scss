@@ -82,6 +82,15 @@
     color: variables.$text-color-primary;
   }
 }
+
+.container-discover {
+  height: 79vh;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
 .main__content {
   display: flex;
   justify-content: center;
