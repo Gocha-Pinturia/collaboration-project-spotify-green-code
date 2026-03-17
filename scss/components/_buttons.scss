@@ -103,6 +103,7 @@ label {
 
             &--active{
                 @extend .btn_with_img--active;
+                background-color: rgba(137, 137, 137, 0.1);
             }
 
             &--disabled{

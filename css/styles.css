@@ -114,6 +114,9 @@ label {
 .btn_with_img_only span {
   display: none;
 }
+.btn_with_img_only--active {
+  background-color: rgba(137, 137, 137, 0.1);
+}
 .cards {
   display: flex;
   flex-direction: column;
@@ -241,6 +244,21 @@ label {
 }
 .card--artist .card__content header span, .card--artist .card__content p {
   display: none;
+}
+.card--artist .card__image img {
+  border-radius: 50%;
+}
+.card--artist .card__image-top-mirror-first, .card--artist .card__image-top-mirror-second {
+  display: none;
+}
+.card--pinned .card__image {
+  position: relative;
+}
+.card--pinned .card__image::before {
+  content: url("../assets/icons/icon_pin_big.svg");
+  position: absolute;
+  top: -1px;
+  right: 0;
 }
 
 @media screen and (max-width: 770px) {
