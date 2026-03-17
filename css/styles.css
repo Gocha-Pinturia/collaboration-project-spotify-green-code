@@ -769,9 +769,6 @@ button, label {
   .mobile-footer-player-none .play-arrow:hover {
     filter: brightness(80%);
   }
-  .actions {
-    display: none !important;
-  }
 }
 .admin-layout {
   display: grid;
