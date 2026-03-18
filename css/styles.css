@@ -152,6 +152,9 @@ label {
 .btn_with_img_only span {
   display: none;
 }
+.btn_with_img_only:hover {
+  background-color: rgba(137, 137, 137, 0.1);
+}
 .btn_with_img_only--active {
   background-color: rgba(137, 137, 137, 0.1);
 }

@@ -149,6 +149,7 @@ label {
 
             &:hover{
                 @extend .btn_with_img, :hover;
+                background-color: rgba(137, 137, 137, 0.1);
             }
 
             &--active{
