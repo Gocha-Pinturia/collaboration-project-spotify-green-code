@@ -32,7 +32,7 @@
 
     &--Liked_songs &__items{
 
-        li:last-child{
+        > li:last-child{
             order: -1;
             margin-left: 0;
             margin-right: auto;
@@ -48,5 +48,60 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 11px;
+    }
+}
+
+.liked_songs{
+    padding: 10px 25px;
+
+    &__table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        color: variables.$text-color-secondary;
+        @include mixins.font_14_regular;
+    }
+
+    &__header{
+        margin: 0 10px 12px 10px;
+
+        th:first-child{
+            text-align: center;
+        }
+    }
+
+    &__row{
+
+        td:first-child{
+            text-align: center;
+            @include mixins.font_14_medium(16px);
+        }
+
+        &:hover{
+            background-color: variables.$bg-color-hover;
+            cursor: pointer;
+        }
+    }
+
+    &__modes{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &_main_items{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &_more{
+            display: flex;
+            align-items: center;
+
+            span{
+                display: inline-block;
+                width: 77px;
+            }
+        }
     }
 }
