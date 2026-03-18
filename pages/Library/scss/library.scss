@@ -29,6 +29,15 @@
         align-items: center;
         gap: 35px;
     }
+
+    &--Liked_songs &__items{
+
+        li:last-child{
+            order: -1;
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
 }
 
 .library_cards{

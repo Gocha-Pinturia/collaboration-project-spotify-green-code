@@ -1,15 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Library</title>
-  <link rel="stylesheet" href="./css/library.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-  <link rel="icon" sizes="32x32" type="image/png" href="../../assets/icons/favicon32.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked songs</title>
+    <link rel="stylesheet" href="./css/library.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="icon" sizes="32x32" type="image/png" href="../../assets/icons/favicon32.png" />
 </head>
-
 <body class="document_body">
 
   <input type="checkbox" id="friends-sidebar-toggle" class="hidden-trigger">
@@ -90,8 +88,8 @@
   <aside class="aside-bar">
     <ul class="aside-bar__list">
       <li class="aside-bar__item">
-        <a class="aside-bar__link aside-bar__icon--active" href="#">
-          <img src="../../assets/icons/icon_libraryA.svg" alt="icon library" />
+        <a class="aside-bar__link aside-bar__icon--active" href="./">
+          <img src="../../assets/icons/icon_library.svg" alt="icon library" />
           <img src="../../assets/icons/icon_libraryA.svg" alt="icon library" />
           My Library
         </a>
@@ -104,7 +102,7 @@
             alt="icon playlists" />Playlists</a>
       </li>
       <li class="aside-bar__item">
-        <a href="./Liked_songs.html" class="aside-bar__link"><img src="../../assets/icons/icon_liked.svg" alt="icon liked" />Liked
+        <a href="#" class="aside-bar__link"><img src="../../assets/icons/icon_liked.svg" alt="icon liked" />Liked
           songs</a>
       </li>
       <li class="aside-bar__item">
@@ -135,13 +133,13 @@
     <!-- main content -->
     <section class="main_section">
 
-      <nav class="library_nav_bar">
+      <nav class="library_nav_bar library_nav_bar--Liked_songs">
         <ul class="library_nav_bar__items">
           <li>
             <ul class="library_nav_bar__buttons_view">
               <li>
                 <!-- List view button -->
-                <button class="btn_with_img_only">
+                <button class="btn_with_img_only btn_with_img_only--active">
                   <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.58398 13H18.584" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
                   <path d="M1 13H2" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
@@ -154,7 +152,7 @@
               </li>
               <li>
                 <!-- Grid view button -->
-                <button class="btn_with_img_only btn_with_img_only--active">
+                <button class="btn_with_img_only">
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 21)" stroke="#E0E0E0" stroke-width="2"/>
                   <rect width="8.18182" height="8.18182" rx="2" transform="matrix(1 0 0 -1 1 9.18176)" stroke="#E0E0E0" stroke-width="2"/>
@@ -213,406 +211,8 @@
         </ul>
       </nav>
 
-      <!-- cards section -->
-      <section class="library_cards">
-        <ul class="library_cards__items">
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="./assets/Images_cards/heart_green.png" alt="Liked songs">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Liked Songs
-                  </h3>
-                  <span>
-                    8
-                  </span>
-                </header>
-                <p>
-                  Numb, Crawling, In the End, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--artist card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DavidBowie.png" alt="David Bowie">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    David Bowie
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  David Bowie
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--artist card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DaftPunk.png" alt="Daft Punk">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Daft Punk
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Daft Punk
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/note.png" alt="Note">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Chill Stuff
-                  </h3>
-                  <span>
-                    152
-                  </span>
-                </header>
-                <p>
-                  Simon and Garfunkel, Daft Punk, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/note.png" alt="Note">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    The Jux Box
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Simon and Garfunkel, Daft Punk, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/note.png" alt="Note">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Vibe
-                  </h3>
-                  <span>
-                    30
-                  </span>
-                </header>
-                <p>
-                  Blue Skies, No Heaven
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/NOTE.png" alt="Note">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Selected Linkin Park
-                  </h3>
-                  <span>
-                    8
-                  </span>
-                </header>
-                <p>
-                  Numb, Crawling, In the End, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/FOLDER.png" alt="Folder">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Fav bands
-                  </h3>
-                  <span>
-                    6
-                  </span>
-                </header>
-                <p>
-                  Linkin Park, Muse, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/Meteora.png" alt="Meteora">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Meteora
-                  </h3>
-                  <span>
-                    
-                  </span>
-                </header>
-                <p>
-                  Linkin Park
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card card--pinned">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/RandomAccessMemories.png" alt="Random Access Memories">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Random Access Memories
-                  </h3>
-                  <span>
-                    13
-                  </span>
-                </header>
-                <p>
-                  Daft Punk
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/AbbeyRoad.png" alt="Abbey Road">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Abbey Road
-                  </h3>
-                  <span>
-                    13
-                  </span>
-                </header>
-                <p>
-                  The Beatles
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/BlackHolesandRevelations.png" alt="Black Holes and Revelations">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Black Holes and Revelations
-                  </h3>
-                  <span>
-                    13
-                  </span>
-                </header>
-                <p>
-                  Muse
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DailyMix1.png" alt="Daily Mix 1">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Daily Mix 1
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Linkin Park, System Of A Down, Coal Chamber...
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DailyMix2.png" alt="Daily Mix 2">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Daily Mix 2
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Avril Lavigne, Lorde, Charli XCX and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/DailyMix3.png" alt="Daily Mix 3">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Daily Mix 3
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  The Strokes, Martin Garrix, MGMT and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/RockMix.png" alt="Rock Mix">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Rock Mix
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/ChillMix.png" alt="Chill Mix">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Chill Mix
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  MF DOOM, Daft Punk, The Chainsmokers, and more
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="card__image">
-                <div class="card__image-top-mirror-second"></div>
-                <div class="card__image-top-mirror-first"></div>
-                <img src="../../assets/card_images/PopMix.png" alt="Pop Mix">
-              </div>
-              <div class="card__content">
-                <header>
-                  <h3>
-                    Pop Mix
-                  </h3>
-                  <span>
-                    50
-                  </span>
-                </header>
-                <p>
-                  Red Hot Chili Peppers, R.E.M., Guns N’ Roses...
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <!-- Liked songs section -->
+      <section class="">
       </section>
     </section>
 
@@ -790,9 +390,7 @@
       </ul>
       
     </div>
-    
-    
   </footer>
-</body>
 
+</body>
 </html>

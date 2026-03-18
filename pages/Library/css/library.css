@@ -21,6 +21,11 @@
   align-items: center;
   gap: 35px;
 }
+.library_nav_bar--Liked_songs .library_nav_bar__items li:last-child {
+  order: -1;
+  margin-left: 0;
+  margin-right: auto;
+}
 
 .library_cards {
   padding: 10px 25px;
