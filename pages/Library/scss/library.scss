@@ -104,4 +104,28 @@
             }
         }
     }
+
+    &__item{
+        
+        &:hover{
+            background-color: variables.$bg-color-secondary;
+        }
+
+        .recommendation{
+
+            &__image{
+            width: 51px;
+            height: 51px;
+            }
+
+            &__info{
+                gap: 4px;
+
+                &-title{
+                    @include mixins.font_14_medium(16px);
+                }
+            }
+        }
+
+    }
 }

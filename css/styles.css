@@ -83,13 +83,13 @@ label {
   cursor: default;
 }
 .btn_with_img--active path, .btn_with_img_only--active path {
-  stroke: rgb(224, 224, 224);
+  stroke: rgb(224, 224, 224) !important;
 }
 .btn_with_img--active rect, .btn_with_img_only--active rect {
-  stroke: rgb(224, 224, 224);
+  stroke: rgb(224, 224, 224) !important;
 }
 .btn_with_img--active circle, .btn_with_img_only--active circle {
-  fill: rgb(224, 224, 224);
+  fill: rgb(224, 224, 224) !important;
 }
 .btn_with_img--active:hover, .btn_with_img_only--active:hover {
   color: rgb(224, 224, 224);
@@ -119,6 +119,7 @@ label {
 }
 .btn_with_img--disabled:hover, .btn_with_img_only--disabled:hover {
   color: rgb(137, 137, 137);
+  background-color: transparent !important;
 }
 .btn_with_img--disabled:hover path, .btn_with_img_only--disabled:hover path {
   stroke: rgb(137, 137, 137);
@@ -138,15 +139,15 @@ label {
   border-radius: 5px;
 }
 .btn_with_img__icon path, .btn_with_img_only path {
-  color: rgb(137, 137, 137);
+  stroke: rgb(137, 137, 137);
   transition: stroke 0.2s ease-in-out;
 }
 .btn_with_img__icon rect, .btn_with_img_only rect {
-  color: rgb(137, 137, 137);
+  stroke: rgb(137, 137, 137);
   transition: stroke 0.2s ease-in-out;
 }
 .btn_with_img__icon circle, .btn_with_img_only circle {
-  color: rgb(137, 137, 137);
+  fill: rgb(137, 137, 137);
   transition: fill 0.2s ease-in-out;
 }
 .btn_with_img_only span {

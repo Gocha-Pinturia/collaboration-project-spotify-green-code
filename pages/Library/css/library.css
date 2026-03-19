@@ -85,5 +85,21 @@
   display: inline-block;
   width: 77px;
 }
+.liked_songs__item:hover {
+  background-color: rgba(32, 32, 32, 0.5);
+}
+.liked_songs__item .recommendation__image {
+  width: 51px;
+  height: 51px;
+}
+.liked_songs__item .recommendation__info {
+  gap: 4px;
+}
+.liked_songs__item .recommendation__info-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}
 
 /*# sourceMappingURL=library.css.map */
