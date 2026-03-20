@@ -51,21 +51,39 @@
   letter-spacing: 3%;
 }
 .liked_songs__header {
-  margin: 0 10px 12px 10px;
+  border-bottom: 3px solid rgba(32, 32, 32, 0.5);
 }
-.liked_songs__header th:first-child {
+.liked_songs__header_item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  padding-top: 2px;
+  padding-bottom: 14px;
+}
+.liked_songs__header_item:first-child {
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.liked_songs__row td:first-child {
+.liked_songs__content::before {
+  content: "";
+  display: block;
+  height: 20px;
+}
+.liked_songs__content_row:hover {
+  background-color: rgb(17, 17, 17);
+}
+.liked_songs__content_item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.liked_songs__content_item:first-child {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 3%;
-}
-.liked_songs__row:hover {
-  background-color: rgb(17, 17, 17);
-  cursor: pointer;
 }
 .liked_songs__modes {
   display: flex;

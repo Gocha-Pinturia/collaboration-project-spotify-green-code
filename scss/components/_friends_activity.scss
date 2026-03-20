@@ -55,6 +55,10 @@
         display: flex;
         gap: 6px;
 
+        &:hover{
+            background-color: variables.$bg-color-secondary;
+        }
+
         &-avatar{
             width: 40px;
             height: 40px;

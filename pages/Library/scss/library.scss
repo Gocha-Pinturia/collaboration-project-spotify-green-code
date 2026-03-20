@@ -63,25 +63,51 @@
     }
 
     &__header{
-        margin: 0 10px 12px 10px;
+        border-bottom: 3px solid variables.$bg-color-secondary;
 
-        th:first-child{
-            text-align: center;
+        &_row{
+            // padding: 0 10px 12px 10px;
+        }
+
+        &_item{
+            @include mixins.font_14_regular;
+            padding-top: 2px;
+            padding-bottom: 14px;
+
+            &:first-child{
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
     }
 
-    &__row{
+    &__content{
 
-        td:first-child{
-            text-align: center;
-            @include mixins.font_14_medium(16px);
+        &::before{
+            content: "";
+            display: block;
+            height: 20px;
         }
 
-        &:hover{
-            background-color: variables.$bg-color-hover;
-            cursor: pointer;
+        &_row{
+            
+            &:hover{
+                background-color: variables.$bg-color-hover;
+            }
+        }
+
+        &_item{
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            &:first-child{
+                text-align: center;
+                @include mixins.font_14_medium(16px);
+            }
         }
     }
+
 
     &__modes{
         display: flex;
